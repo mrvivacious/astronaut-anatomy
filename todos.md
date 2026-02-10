@@ -19,8 +19,11 @@ Find an astronaut's wikipedia page by clicking on their name
 
 
 ### TODO LIST
-organize astronaut selection group data. a little bit for now is fine. focus on functionality.
 
-eventually add support for every astronaut agency ie. ESA ISRO JAXA
+“How fast do certain paths converge toward selection readiness?” -> “Years from highest degree → selection” (chat gpt's idea)
+
+eventually add support for every astronaut group.
+
+Eventually support additionaly agencies ie. ESA ISRO JAXA
 
 maybe some charts or diagrams for visual folks
