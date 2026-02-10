@@ -1,26 +1,179 @@
 <html>
 <head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Astronaut Anatomy</title>
  <style>
+  * {
+    box-sizing: border-box;
+  }
+
   body {
-    font-family: 'Times New Roman', Times, serif;
-    /* text-align: center; */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(55, 55, 55);
+    color: blanchedAlmond;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-size: 16px;
+    margin: 8px 0;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid blanchedAlmond;
+    margin: 20px 0;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+
+  table th, table td {
+    padding: 10px 8px;
+    text-align: left;
+    border-bottom: 1px solid rgb(100, 100, 100);
+  }
+
+  table th {
+    border-bottom: 2px solid blanchedAlmond;
+    font-weight: bold;
+  }
+
+  .table-wrapper {
+    overflow-x: auto;
+    margin-bottom: 20px;
+  }
+
+  .group-section {
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      padding: 15px;
+      font-size: 15px;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-top: 25px;
+    }
+
+    h3 {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 15px;
+      margin: 6px 0;
+    }
+
+    table {
+      font-size: 13px;
+    }
+
+    table th, table td {
+      padding: 8px 6px;
+    }
+
+    .table-wrapper {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .group-section {
+      margin-bottom: 40px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    body {
+      padding: 12px;
+      font-size: 14px;
+    }
+
+    h1 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin-top: 20px;
+    }
+
+    h3 {
+      font-size: 15px;
+      margin-bottom: 6px;
+    }
+
+    p {
+      font-size: 14px;
+      margin: 5px 0;
+    }
+
+    table {
+      font-size: 12px;
+    }
+
+    table th, table td {
+      padding: 6px 4px;
+    }
+
+    .group-section {
+      margin-bottom: 30px;
+    }
   }
  </style>
 </head>
 
 <body style="background-color: rgb(55, 55, 55); color: blanchedAlmond">
-  <h1>Astronaut Anatomy</h1>
+  <h1>Astronaut Anatomy | <em>What does it take to go to space?</em></h1>
   <hr>
-  <p>Total astronauts selected by NASA since 2004:</p>
+  <h3 style="color:red;">NOTE TO ALL ASTRONAUT PROSPECTS:<br>This presentation describes <em>selected</em> astronauts, not applicants.
+    Copying surface traits without replicating underlying 
+    skillsets, responsibilities, successes...is unlikely to help.</h3>
+  <hr>
+  <h3>Total astronauts selected by NASA since 2004:</h3>
   <p id="astronaut_count"></p>
-  <p>Degree Distribution</p>
+  <h3>Degree Distribution</h3>
   <p id="degree_counts"></p>
-  <p>Military Distribution</p>
+  <h3>Military Distribution</h3>
   <p id="military_counts"></p>
-  <p>Average astronaut age:</p>
+  <h3>Average astronaut age:</h3>
   <p id="age_all_groups">-1</p>
-  <p>Average astronaut age by group:</p>
+  <h3>Average astronaut age by group:</p>
   <p id="age_by_group">-1</p>
 
   <hr>
@@ -29,7 +182,8 @@
 </body>
   <script src="data.js"></script>
   <script src="age.js"></script>
+  <script src="education.js"></script>
+  <script src="military.js"></script>
   <script src="loader.js"></script>
-  <script src="stats.js"></script>
   <script src="groups_display.js"></script>
 </html>

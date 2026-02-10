@@ -19,7 +19,7 @@ function displayGroupsInfo() {
 
     // Create group section
     let groupSection = document.createElement('div');
-    groupSection.style.marginBottom = '40px';
+    groupSection.className = 'group-section';
 
     // Group header
     let headerText = `${groupName} (${group.selection_year})`;
@@ -31,23 +31,21 @@ function displayGroupsInfo() {
     groupHeader.innerText = headerText;
     groupSection.appendChild(groupHeader);
 
+    // Create table wrapper for horizontal scrolling on mobile
+    let tableWrapper = document.createElement('div');
+    tableWrapper.className = 'table-wrapper';
+
     // Create table
     let table = document.createElement('table');
-    table.style.borderCollapse = 'collapse';
-    table.style.width = '100%';
 
     // Table header
     let thead = document.createElement('thead');
     let headerRow = document.createElement('tr');
-    headerRow.style.borderBottom = '2px solid blanchedAlmond';
     
     let headers = ['Name', 'Age', 'Degree', 'Education', 'Military', 'Nationality'];
     for (let j = 0; j < headers.length; j++) {
       let th = document.createElement('th');
       th.innerText = headers[j];
-      th.style.textAlign = 'left';
-      th.style.padding = '10px';
-      th.style.borderBottom = '1px solid blanchedAlmond';
       headerRow.appendChild(th);
     }
     thead.appendChild(headerRow);
@@ -59,7 +57,6 @@ function displayGroupsInfo() {
     for (let j = 0; j < astronauts.length; j++) {
       let astronaut = astronauts[j];
       let row = document.createElement('tr');
-      row.style.borderBottom = '1px solid rgb(100, 100, 100)';
 
       let cells = [
         astronaut.name,
@@ -73,14 +70,14 @@ function displayGroupsInfo() {
       for (let k = 0; k < cells.length; k++) {
         let td = document.createElement('td');
         td.innerText = cells[k];
-        td.style.padding = '8px 10px';
         row.appendChild(td);
       }
       tbody.appendChild(row);
     }
     table.appendChild(tbody);
 
-    groupSection.appendChild(table);
+    tableWrapper.appendChild(table);
+    groupSection.appendChild(tableWrapper);
     groupsInfoElement.appendChild(groupSection);
   }
 }

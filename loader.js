@@ -1,7 +1,21 @@
 // loader.js
 
 let astronautCountElement = document.getElementById('astronaut_count');
-astronautCountElement.innerText = getTotalNumberOfAstronauts();
+if (astronautCountElement) {
+  astronautCountElement.innerText = getTotalNumberOfAstronauts();
+}
+
+// education
+let degreesElement = document.getElementById('degree_counts');
+if (degreesElement) {
+  degreesElement.innerText = formatDegreeCounts();
+}
+
+// military
+let militaryElement = document.getElementById('military_counts');
+if (militaryElement) {
+  militaryElement.innerText = formatMilitaryCounts();
+}
 
 // age
 let ageAveragesObject = getAgeAveragesObject();

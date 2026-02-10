@@ -1,47 +1,3 @@
-// stats.js
-
-function getDegreeCounts() {
-  let degreeCounts = {};
-  let groupNames = getGroupNames();
-
-  for (let i = 0; i < groupNames.length; i++) {
-    let group = getGroup(groupNames[i]);
-    let astronauts = group.astronauts;
-
-    for (let j = 0; j < astronauts.length; j++) {
-      let degree = astronauts[j].highest_degree;
-      if (degreeCounts[degree]) {
-        degreeCounts[degree]++;
-      } else {
-        degreeCounts[degree] = 1;
-      }
-    }
-  }
-
-  return degreeCounts;
-}
-
-function formatDegreeCounts() {
-  let degreeCounts = getDegreeCounts();
-  let degreeOrder = ['PhD', 'MD', 'MS', 'MEd', 'MPhil', 'MSc', 'MPH', 'Executive Master\'s', 'BS', 'BEng'];
-  let output = [];
-
-  for (let i = 0; i < degreeOrder.length; i++) {
-    let degree = degreeOrder[i];
-    if (degreeCounts[degree]) {
-      let label = degree;
-      if (degreeCounts[degree] > 1 && degree === 'PhD') {
-        label = 'PhDs';
-      } else if (degreeCounts[degree] > 1 && degree === 'MD') {
-        label = 'MDs';
-      }
-      output.push(`${degreeCounts[degree]} ${label}`);
-    }
-  }
-
-  return output.join('. ') + '.';
-}
-
 function getMilitaryCounts() {
   let militaryBranches = {};
   let civilianCount = 0;
@@ -81,7 +37,10 @@ function getMilitaryCounts() {
             branch = 'Royal Canadian Air Force';
           } else if (branch.includes('self defense')) {
             branch = 'Japan Air Self Defense Force';
+          } else if (branch.includes('dubai police')) {
+            branch = 'Dubai Police';
           }
+
 
           if (militaryBranches[branch]) {
             militaryBranches[branch]++;
@@ -104,23 +63,29 @@ function formatMilitaryCounts() {
   let counts = getMilitaryCounts();
   let output = `${counts.civilian} Civilian${counts.civilian !== 1 ? 's' : ''}. ${counts.military} Military (`;
   
-  let branchStrings = [];
+  // Separate US and international branches
+  let usAmerican = ['Air Force', 'Navy', 'Army', 'Marines', 'Coast Guard', 'Space Force'];
+  let usaStrings = [];
+  let internationalStrings = [];
+  
   for (let branch in counts.branches) {
-    branchStrings.push(`${counts.branches[branch]} ${branch}`);
+    let branchString = `${counts.branches[branch]} ${branch}`;
+    
+    if (usAmerican.includes(branch)) {
+      usaStrings.push(branchString);
+    } else {
+      internationalStrings.push(branchString);
+    }
   }
   
-  output += branchStrings.join(', ') + ').';
+  // Combine USA branches first
+  let allBranches = usaStrings;
+  
+  // Add international branches with label if they exist
+  if (internationalStrings.length > 0) {
+    allBranches.push('International: ' + internationalStrings.join(', '));
+  }
+  
+  output += allBranches.join(', ') + ').';
   return output;
-}
-
-// Populate the elements
-let degreesElement = document.getElementById('degree_counts');
-let militaryElement = document.getElementById('military_counts');
-
-if (degreesElement) {
-  degreesElement.innerText = formatDegreeCounts();
-}
-
-if (militaryElement) {
-  militaryElement.innerText = formatMilitaryCounts();
 }
