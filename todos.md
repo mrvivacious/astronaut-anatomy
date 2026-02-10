@@ -1,11 +1,3 @@
-# Astronaut Anatomy
-
-*"What does it take to go to space?"*
-
-Explore the qualities of astronauts selected for NASA missions.
-
-Created for students interested in becoming astronauts. Astronomy enthusiasts welcome.
-
 ## Features
 Compare selection groups
 
