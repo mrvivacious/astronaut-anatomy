@@ -9,7 +9,6 @@
 // year of selection program: number
 // missions participated in: [string]
 
-// current focus: nasa
 let nasa = {
   "astronaut_groups": {
     "group_23": {
@@ -540,7 +539,7 @@ let nasa = {
           "age_at_selection": 37,
           "highest_degree": "MS",
           "education": "Georgia Institute of Technology",
-          "military_experience": "USA",
+          "military_experience": "army",
           "nationality": "USA",
           "is_international": false
         },
