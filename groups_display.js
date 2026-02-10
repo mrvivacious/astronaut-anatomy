@@ -22,8 +22,13 @@ function displayGroupsInfo() {
     groupSection.style.marginBottom = '40px';
 
     // Group header
+    let headerText = `${groupName} (${group.selection_year})`;
+    if (group.applications_received) {
+      headerText += ` | ${group.applications_received} applicants`;
+    }
+
     let groupHeader = document.createElement('h3');
-    groupHeader.innerText = `${groupName} (${group.selection_year})`;
+    groupHeader.innerText = headerText;
     groupSection.appendChild(groupHeader);
 
     // Create table
