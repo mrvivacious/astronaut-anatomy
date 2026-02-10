@@ -15,6 +15,7 @@ let nasa = {
     "group_23": {
       "selection_year": 2021,
       "applications_received": 12000,
+      "average_age_of_astronauts": 36.67, 
       "astronauts": [
         {
           "name": "Nichole Ayers",
@@ -130,6 +131,7 @@ let nasa = {
     "group_22": {
       "selection_year": 2017,
       "applications_received": 18300,
+      "average_age_of_astronauts": 33.71, 
       "astronauts": [
         {
           "name": "Kayla Barron",
@@ -263,6 +265,7 @@ let nasa = {
     "group_21": {
       "selection_year": 2013,
       "applications_received": 6300,
+      "average_age_of_astronauts": 36.50, 
       "astronauts": [
         {
           "name": "Josh A. Cassada",
@@ -342,6 +345,7 @@ let nasa = {
     "group_20": {
       "selection_year": 2009,
       "applications_received": null,
+      "average_age_of_astronauts": 36.71, 
       "astronauts": [
         {
           "name": "Serena M. Aunon",
@@ -475,6 +479,7 @@ let nasa = {
     "group_19": {
       "selection_year": 2004,
       "applications_received": null,
+      "average_age_of_astronauts": 37.73, 
       "astronauts": [
         {
           "name": "Joseph M Acaba",

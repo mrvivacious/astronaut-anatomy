@@ -2,34 +2,22 @@
 
 function getAgeAveragesObject() {
   let groupNames = getGroupNames();
-  console.log(groupNames)
-
-  let totalAgeSum = 0;
   let averageAgeByGroup = {};
-  let astronautCounter = 0;
+  let totalAgeSum = 0;
+  let groupCount = 0;
 
   for (let i = 0; groupNames[i]; i++) {
-    let currentName = groupNames[i];
-    let group = getGroup(currentName);
-    let groupAstronauts = group.astronauts;
-    let groupAgeSum = 0;
-
-    for (let j = 0; groupAstronauts[j]; j++) {
-      let astronaut = groupAstronauts[j];
-      let astronautAge = astronaut.age_at_selection
-
-      groupAgeSum += astronautAge
-      astronautCounter++
-    }
-
-    totalAgeSum += groupAgeSum;
-    averageAgeByGroup[currentName] = (groupAgeSum / groupAstronauts.length).toFixed(2);
+    let groupName = groupNames[i];
+    let group = getGroup(groupName);
+    averageAgeByGroup[groupName] = group.average_age_of_astronauts;
+    totalAgeSum += group.average_age_of_astronauts;
+    groupCount++;
   }
 
-  let averageAge = (totalAgeSum / astronautCounter).toFixed(2);
+  let overallAverageAge = (totalAgeSum / groupCount).toFixed(2);
 
   return {
-    averageAge: averageAge,
+    averageAge: overallAverageAge,
     averageAgeByGroup: averageAgeByGroup
   }
 }
