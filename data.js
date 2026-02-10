@@ -157,8 +157,106 @@ let nasa = {
           "military_experience": "US Air Force",
           "nationality": "USA",
           "is_international": false
+        },
+        {
+          "name": "Matthew Dominick",
+          "age_at_selection": 32,
+          "highest_degree": "MS",
+          "education": "Naval Postgraduate School",
+          "military_experience": "US Navy",
+          "nationality": "USA",
+          "is_international": false
+        },
+        {
+          "name": "Bob Hines",
+          "age_at_selection": 38,
+          "highest_degree": "MS",
+          "education": "US Air Force Test Pilot School; University of Alabama",
+          "military_experience": "US Air Force",
+          "nationality": "USA",
+          "is_international": false
+        },
+        {
+          "name": "Warren Hoburg",
+          "age_at_selection": 32,
+          "highest_degree": "PhD",
+          "education": "UC Berkeley",
+          "military_experience": null,
+          "nationality": "USA",
+          "is_international": false
+        },
+        {
+          "name": "Jonny Kim",
+          "age_at_selection": 33,
+          "highest_degree": "MD",
+          "education": "Harvard",
+          "military_experience": "US Navy SEAL",
+          "nationality": "USA",
+          "is_international": false
+        },
+        {
+          "name": "Jasmin Moghbeli",
+          "age_at_selection": 34,
+          "highest_degree": "MS",
+          "education": "Naval Postgraduate School; MIT",
+          "military_experience": "USMC",
+          "nationality": "USA",
+          "is_international": false
+        },
+        {
+          "name": "Loral O'Hara",
+          "age_at_selection": 34,
+          "highest_degree": "MS",
+          "education": "Purdue",
+          "military_experience": null,
+          "nationality": "USA",
+          "is_international": false
+        },
+        {
+          "name": "Frank Rubio",
+          "age_at_selection": 42,
+          "highest_degree": "MD",
+          "education": "Uniformed Services University of the Health Sciences",
+          "military_experience": "US Army",
+          "nationality": "USA",
+          "is_international": false
+        },
+        {
+          "name": "Jessica Watkins",
+          "age_at_selection": 29,
+          "highest_degree": "PhD",
+          "education": "UCLA; Stanford",
+          "military_experience": null,
+          "nationality": "USA",
+          "is_international": false
+        },
+        {
+          "name": "Joshua Kutryk",
+          "age_at_selection": 35,
+          "highest_degree": "MSc",
+          "education": "Embry Riddle; Air University",
+          "military_experience": "Royal Canadian Air Force",
+          "nationality": "Canada",
+          "is_international": true
+        },
+        {
+          "name": "Jenni Sidey-Gibbons",
+          "age_at_selection": 29,
+          "highest_degree": "PhD",
+          "education": "Jesus College Cambridge",
+          "military_experience": null,
+          "nationality": "Canada",
+          "is_international": true
+        },
+        {
+          "name": "Robb Kulin (resigned before training)",
+          "age_at_selection": 34,
+          "highest_degree": "PhD",
+          "education": "University of California San Diego",
+          "military_experience": null,
+          "nationality": "USA",
+          "is_international": false
         }
-        /* remaining group_22 entries would continue identically */
       ]
     },
 
@@ -174,8 +272,70 @@ let nasa = {
           "military_experience": "US Navy",
           "nationality": "USA",
           "is_international": false
+        },
+        {
+          "name": "Victor J. Glover, Jr.",
+          "age_at_selection": 37,
+          "highest_degree": "MS",
+          "education": "Naval Postgraduate School; Air University",
+          "military_experience": "US Navy",
+          "nationality": "USA",
+          "is_international": false
+        },
+        {
+          "name": "Nick Hague",
+          "age_at_selection": 38,
+          "highest_degree": "MS",
+          "education": "MIT",
+          "military_experience": "US Air Force Space Force",
+          "nationality": "USA",
+          "is_international": false
+        },
+        {
+          "name": "Christina H. Koch",
+          "age_at_selection": 34,
+          "highest_degree": "MS",
+          "education": "North Carolina State University",
+          "military_experience": null,
+          "nationality": "USA",
+          "is_international": false
+        },
+        {
+          "name": "Nicole A. Mann",
+          "age_at_selection": 36,
+          "highest_degree": "MS",
+          "education": "Stanford",
+          "military_experience": "USMC",
+          "nationality": "USA",
+          "is_international": false
+        },
+        {
+          "name": "Anne C. McClain",
+          "age_at_selection": 34,
+          "highest_degree": "MS",
+          "education": "University of Bath; University of Bristol",
+          "military_experience": "US Army",
+          "nationality": "USA",
+          "is_international": false
+        },
+        {
+          "name": "Jessica U. Meir",
+          "age_at_selection": 36,
+          "highest_degree": "PhD",
+          "education": "UC San Diego",
+          "military_experience": null,
+          "nationality": "USA",
+          "is_international": false
+        },
+        {
+          "name": "Andrew R. Morgan",
+          "age_at_selection": 37,
+          "highest_degree": "MD",
+          "education": "Uniformed Services University of the Health Sciences",
+          "military_experience": "US Army",
+          "nationality": "USA",
+          "is_international": false
         }
-        /* remaining group_21 entries */
       ]
     },
 
@@ -184,6 +344,51 @@ let nasa = {
       "applications_received": null,
       "astronauts": [
         {
+          "name": "Serena M. Aunon",
+          "age_at_selection": 33,
+          "highest_degree": "MPH",
+          "education": "UT Galveston",
+          "military_experience": null,
+          "nationality": "USA",
+          "is_international": false
+        },
+        {
+          "name": "Jeanette J Epps",
+          "age_at_selection": 39,
+          "highest_degree": "PhD",
+          "education": "University of Maryland College Park",
+          "military_experience": null,
+          "nationality": "USA",
+          "is_international": false
+        },
+        {
+          "name": "Jack D Fischer",
+          "age_at_selection": 35,
+          "highest_degree": "MS",
+          "education": "MIT",
+          "military_experience": "US Air Force",
+          "nationality": "USA",
+          "is_international": false
+        },
+        {
+          "name": "Michael S Hopkins",
+          "age_at_selection": 41,
+          "highest_degree": "MS",
+          "education": "Stanford",
+          "military_experience": "US Space Force",
+          "nationality": "USA",
+          "is_international": false
+        },
+        {
+          "name": "Kjell N Lindgren",
+          "age_at_selection": 36,
+          "highest_degree": "MPH",
+          "education": "UT Galveston",
+          "military_experience": "US Air Force",
+          "nationality": "USA",
+          "is_international": false
+        },
+        {
           "name": "Kathleen Rubins",
           "age_at_selection": 31,
           "highest_degree": "PhD",
@@ -191,8 +396,79 @@ let nasa = {
           "military_experience": null,
           "nationality": "USA",
           "is_international": false
+        },
+        {
+          "name": "Scott D Tingle",
+          "age_at_selection": 44,
+          "highest_degree": "MS",
+          "education": "Purdue",
+          "military_experience": "US Navy",
+          "nationality": "USA",
+          "is_international": false
+        },
+        {
+          "name": "Mark T. Vande Hei",
+          "age_at_selection": 43,
+          "highest_degree": "MS",
+          "education": "Stanford",
+          "military_experience": "US Army",
+          "nationality": "USA",
+          "is_international": false
+        },
+        {
+          "name": "Gregory R Wiseman",
+          "age_at_selection": 34,
+          "highest_degree": "MS",
+          "education": "Johns Hopkins",
+          "military_experience": "US Navy",
+          "nationality": "USA",
+          "is_international": false
+        },
+        {
+          "name": "Jeremy Hansen",
+          "age_at_selection": 33,
+          "highest_degree": "MSc",
+          "education": "Royal Military College",
+          "military_experience": "Royal Canadian Air Force",
+          "nationality": "Canada",
+          "is_international": true
+        },
+        {
+          "name": "Norishige Kanai",
+          "age_at_selection": 33,
+          "highest_degree": "MD",
+          "education": "National Defense Medical College",
+          "military_experience": null,
+          "nationality": "Japan",
+          "is_international": true
+        },
+        {
+          "name": "Takuya Onishi",
+          "age_at_selection": 34,
+          "highest_degree": "BEng",
+          "education": "University of Tokyo",
+          "military_experience": null,
+          "nationality": "Japan",
+          "is_international": true
+        },
+        {
+          "name": "David Saint-Jacques",
+          "age_at_selection": 39,
+          "highest_degree": "PhD",
+          "education": "Corpus Christi College Cambridge",
+          "military_experience": null,
+          "nationality": "Canada",
+          "is_international": true
+        },
+        {
+          "name": "Kimiya Yui",
+          "age_at_selection": 39,
+          "highest_degree": "BS",
+          "education": "National Defense Academy of Japan",
+          "military_experience": "Japan Air Self Defense Force",
+          "nationality": "Japan",
+          "is_international": true
         }
-        /* remaining group_20 entries */
       ]
     },
 
@@ -201,6 +477,33 @@ let nasa = {
       "applications_received": null,
       "astronauts": [
         {
+          "name": "Joseph M Acaba",
+          "age_at_selection": 37,
+          "highest_degree": "MEd",
+          "education": "Texas Tech University",
+          "military_experience": "USMCR",
+          "nationality": "USA",
+          "is_international": false
+        },
+        {
+          "name": "Richard R Arnold",
+          "age_at_selection": 41,
+          "highest_degree": "MS",
+          "education": "University of Maryland College Park",
+          "military_experience": null,
+          "nationality": "USA",
+          "is_international": false
+        },
+        {
+          "name": "Randolph Bresnik",
+          "age_at_selection": 37,
+          "highest_degree": "MS",
+          "education": "University of Tennessee Knoxville",
+          "military_experience": "USMC",
+          "nationality": "USA",
+          "is_international": false
+        },
+        {
           "name": "Christopher Cassidy",
           "age_at_selection": 34,
           "highest_degree": "MS",
@@ -208,8 +511,70 @@ let nasa = {
           "military_experience": "US Navy SEAL",
           "nationality": "USA",
           "is_international": false
+        },
+        {
+          "name": "James Dutton",
+          "age_at_selection": 36,
+          "highest_degree": "MS",
+          "education": "University of Washington",
+          "military_experience": "USAF",
+          "nationality": "USA",
+          "is_international": false
+        },
+        {
+          "name": "Jose Moreno Hernandez",
+          "age_at_selection": 42,
+          "highest_degree": "MS",
+          "education": "UC Santa Barbara",
+          "military_experience": null,
+          "nationality": "USA",
+          "is_international": false
+        },
+        {
+          "name": "Robert S Kimbrough",
+          "age_at_selection": 37,
+          "highest_degree": "MS",
+          "education": "Georgia Institute of Technology",
+          "military_experience": "USA",
+          "nationality": "USA",
+          "is_international": false
+        },
+        {
+          "name": "Thomas Marshburn",
+          "age_at_selection": 44,
+          "highest_degree": "MS",
+          "education": "UT Galveston",
+          "military_experience": null,
+          "nationality": "USA",
+          "is_international": false
+        },
+        {
+          "name": "Dorothy Metcalf-Lindenburger",
+          "age_at_selection": 29,
+          "highest_degree": "MS",
+          "education": "University of Washington",
+          "military_experience": null,
+          "nationality": "USA",
+          "is_international": false
+        },
+        {
+          "name": "Robert Satcher",
+          "age_at_selection": 39,
+          "highest_degree": "PhD",
+          "education": "MIT",
+          "military_experience": null,
+          "nationality": "USA",
+          "is_international": false
+        },
+        {
+          "name": "Shannon Walker",
+          "age_at_selection": 39,
+          "highest_degree": "PhD",
+          "education": "Rice University",
+          "military_experience": null,
+          "nationality": "USA",
+          "is_international": false
         }
-        /* remaining group_19 entries */
       ]
     }
   }
