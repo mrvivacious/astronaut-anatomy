@@ -22,6 +22,18 @@ maybe some charts or diagrams for visual folks
 
 ### notes from chatgpt
 
+#### on international agency data
+```
+A. Data collection (high leverage, high risk)
+What you’re doing right
+Focusing on groups, not individuals
+Treating this as infrastructure, not insight
+
+Risk
+You can lose months here.
+ESA / JAXA / ISRO data quality is inconsistent and culturally non-uniform.
+```
+
 #### on degree ratio
 ```
 The MS holders are not “lighter candidates.”
