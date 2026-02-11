@@ -77,15 +77,12 @@ function displayGroupsInfo() {
         }
 
         if (k === 3 && astronaut.degrees) {
-          let t = '';
-          for (degree in astronaut.degrees) {
-            let degreeInfo = astronaut.degrees[degree]
-            console.log(degreeInfo)
-            t += `${degreeInfo.level} ${degreeInfo.field} (${degreeInfo.institution})<br><br>`;
-          }
+          const lines = astronaut.degrees.map(degreeInfo => {
+            const fieldsText = degreeInfo.fields?.join(', ') || '';
+            return `${degreeInfo.level} ${fieldsText} (${degreeInfo.institution})`;
+          });
 
-          t = t.substring(0, t.length - 8); // remove last <br><br>
-          td.innerHTML = t;
+          td.innerHTML = lines.join('<br><br>');
         }
 
         row.appendChild(td);

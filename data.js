@@ -34,7 +34,7 @@ let nasa = {
           "degrees": [
             {
               "level": "BS",
-              "field": "Mathematics",
+              "fields": ["Mathematics"],
               "category": "Mathematics",
               "minor": "Russian", // TODO category -> array?
               "institution": "United States Air Force Academy",
@@ -42,7 +42,7 @@ let nasa = {
             },
             {
               "level": "MS",
-              "field": "Computational and Applied Mathematics",
+              "fields": ["Computational and Applied Mathematics"],
               "category": "Mathematics",
               "institution": "Rice University",
               "year_completed": 2013
@@ -61,21 +61,21 @@ let nasa = {
           "degrees": [
             {
               "level": "BS",
-              "field": "Mechanical Engineering",
+              "fields": ["Mechanical Engineering"],
               "category": "Engineering",
               "institution": "Massachusetts Institute of Technology",
               "year_completed": null
             },
             {
               "level": "MS",
-              "field": "Mechanical Engineering",
+              "fields": ["Mechanical Engineering"],
               "category": "Engineering",
               "institution": "Stanford University",
               "year_completed": null
             },
             {
               "level": "PhD",
-              "field": "Aeronautics and Astronautics",
+              "fields": ["Aeronautics and Astronautics"],
               "category": "Engineering",
               "institution": "Stanford University",
               "year_completed": null
@@ -90,7 +90,16 @@ let nasa = {
           "education": "MIT",
           "military_experience": null,
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["TODO"],
+              "category": "Engineering",
+              "institution": "",
+              "year_completed": null
+            },
+          ]
         },
         {
           "name": "Deniz Burnham",
@@ -100,7 +109,16 @@ let nasa = {
           "education": "USC",
           "military_experience": null,
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["TODO"],
+              "category": "Engineering",
+              "institution": "",
+              "year_completed": null
+            },
+          ]
         },
         {
           "name": "Luke Delaney",
