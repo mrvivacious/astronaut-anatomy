@@ -1,13 +1,14 @@
 // data.js
 //
-// full astronaut name: string
-// sex: string m/f/x
-// date of birth: string
-// nationality: string
-// military status: string
-// title: string
-// year of selection program: number
-// missions participated in: [string]
+// Field categotories to help make degrees searchable (todo)
+// Engineering
+// Physical Sciences
+// Biological Sciences
+// Mathematics
+// Medicine
+// Military Science
+// Computer Science
+// Other
 
 let nasa = {
   "astronaut_groups": {
@@ -18,15 +19,34 @@ let nasa = {
       "astronauts": [
         {
           "name": "Nichole Ayers",
+          "wikipedia_link": "https://en.wikipedia.org/wiki/Nichole_Ayers",
           "age_at_selection": 33,
           "highest_degree": "MS",
           "education": "Rice University",
           "military_experience": "USAF",
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": [
+            {
+              "level": "BS",
+              "field": "Mathematics",
+              "category": "Mathematics",
+              "minor": "Russian", // TODO category -> array?
+              "institution": "United States Air Force Academy",
+              "year_completed": 2011
+            },
+            {
+              "level": "MS",
+              "field": "Computational and Applied Mathematics",
+              "category": "Mathematics",
+              "institution": "Rice University",
+              "year_completed": 2013
+            }
+          ]
         },
         {
           "name": "Marcos Berrios",
+          "wikipedia_link": "https://en.wikipedia.org/wiki/Marcos_Berríos",
           "age_at_selection": 37,
           "highest_degree": "PhD",
           "education": "Stanford University",
@@ -36,6 +56,7 @@ let nasa = {
         },
         {
           "name": "Chris Birch",
+          "wikipedia_link": "https://en.wikipedia.org/wiki/Christina_Birch",
           "age_at_selection": 35,
           "highest_degree": "PhD",
           "education": "MIT",
@@ -45,6 +66,7 @@ let nasa = {
         },
         {
           "name": "Deniz Burnham",
+          "wikipedia_link": "https://en.wikipedia.org/wiki/Deniz_Burnham",
           "age_at_selection": 36,
           "highest_degree": "MS",
           "education": "USC",
@@ -54,6 +76,7 @@ let nasa = {
         },
         {
           "name": "Luke Delaney",
+          "wikipedia_link": "https://en.wikipedia.org/wiki/Luke_Delaney_(astronaut)",
           "age_at_selection": 42,
           "highest_degree": "MS",
           "education": "Naval Postgraduate School",
@@ -63,6 +86,7 @@ let nasa = {
         },
         {
           "name": "Andre Douglas",
+          "wikipedia_link": "https://en.wikipedia.org/wiki/Andre_Douglas",
           "age_at_selection": 36,
           "highest_degree": "PhD",
           "education": "George Washington University",
@@ -72,6 +96,7 @@ let nasa = {
         },
         {
           "name": "Jack Hathaway",
+          "wikipedia_link": "https://en.wikipedia.org/wiki/Jack_Hathaway",
           "age_at_selection": 39,
           "highest_degree": "MS",
           "education": "Cranfield University; Naval War College",
@@ -81,6 +106,7 @@ let nasa = {
         },
         {
           "name": "Anil Menon",
+          "wikipedia_link": "https://en.wikipedia.org/wiki/Anil_Menon_(astronaut_candidate)",
           "age_at_selection": 45,
           "highest_degree": "MD",
           "education": "Stanford University; UT Medical Branch",
@@ -90,6 +116,7 @@ let nasa = {
         },
         {
           "name": "Christopher L. Williams",
+          "wikipedia_link": "https://en.wikipedia.org/wiki/Christopher_Williams_(astronaut)",
           "age_at_selection": 38,
           "highest_degree": "PhD",
           "education": "MIT",
@@ -99,6 +126,7 @@ let nasa = {
         },
         {
           "name": "Jessica Wittner",
+          "wikipedia_link": "https://en.wikipedia.org/wiki/Jessica_Wittner",
           "age_at_selection": 38,
           "highest_degree": "MS",
           "education": "Naval Postgraduate School",
@@ -108,6 +136,7 @@ let nasa = {
         },
         {
           "name": "Nora Al Matrooshi",
+          "wikipedia_link": "https://en.wikipedia.org/wiki/Nora_Al_Matrooshi",
           "age_at_selection": 28,
           "highest_degree": "BS",
           "education": "UAE University",
@@ -117,6 +146,7 @@ let nasa = {
         },
         {
           "name": "Mohammed Al Mulla",
+          "wikipedia_link": "https://en.wikipedia.org/wiki/Mohammad_Al_Mulla",
           "age_at_selection": 33,
           "highest_degree": "Executive Master's",
           "education": "Mohammed Bin Rashid School of Government",
@@ -134,6 +164,7 @@ let nasa = {
       "astronauts": [
         {
           "name": "Kayla Barron",
+          "wikipedia_link": "",
           "age_at_selection": 30,
           "highest_degree": "MPhil",
           "education": "Peterhouse, Cambridge",
@@ -143,6 +174,7 @@ let nasa = {
         },
         {
           "name": "Zena Cardman",
+          "wikipedia_link": "",
           "age_at_selection": 30,
           "highest_degree": "MS",
           "education": "UNC Chapel Hill",
@@ -152,6 +184,7 @@ let nasa = {
         },
         {
           "name": "Raja Chari",
+          "wikipedia_link": "",
           "age_at_selection": 40,
           "highest_degree": "MS",
           "education": "MIT",
@@ -161,6 +194,7 @@ let nasa = {
         },
         {
           "name": "Matthew Dominick",
+          "wikipedia_link": "",
           "age_at_selection": 32,
           "highest_degree": "MS",
           "education": "Naval Postgraduate School",
@@ -170,6 +204,7 @@ let nasa = {
         },
         {
           "name": "Bob Hines",
+          "wikipedia_link": "",
           "age_at_selection": 38,
           "highest_degree": "MS",
           "education": "US Air Force Test Pilot School; University of Alabama",
@@ -179,6 +214,7 @@ let nasa = {
         },
         {
           "name": "Warren Hoburg",
+          "wikipedia_link": "",
           "age_at_selection": 32,
           "highest_degree": "PhD",
           "education": "UC Berkeley",
@@ -188,6 +224,7 @@ let nasa = {
         },
         {
           "name": "Jonny Kim",
+          "wikipedia_link": "",
           "age_at_selection": 33,
           "highest_degree": "MD",
           "education": "Harvard",
@@ -197,6 +234,7 @@ let nasa = {
         },
         {
           "name": "Jasmin Moghbeli",
+          "wikipedia_link": "",
           "age_at_selection": 34,
           "highest_degree": "MS",
           "education": "Naval Postgraduate School; MIT",
@@ -206,6 +244,7 @@ let nasa = {
         },
         {
           "name": "Loral O'Hara",
+          "wikipedia_link": "",
           "age_at_selection": 34,
           "highest_degree": "MS",
           "education": "Purdue",
@@ -215,6 +254,7 @@ let nasa = {
         },
         {
           "name": "Frank Rubio",
+          "wikipedia_link": "",
           "age_at_selection": 42,
           "highest_degree": "MD",
           "education": "Uniformed Services University of the Health Sciences",
@@ -224,6 +264,7 @@ let nasa = {
         },
         {
           "name": "Jessica Watkins",
+          "wikipedia_link": "",
           "age_at_selection": 29,
           "highest_degree": "PhD",
           "education": "UCLA; Stanford",
@@ -233,6 +274,7 @@ let nasa = {
         },
         {
           "name": "Joshua Kutryk",
+          "wikipedia_link": "",
           "age_at_selection": 35,
           "highest_degree": "MSc",
           "education": "Embry Riddle; Air University",
@@ -242,6 +284,7 @@ let nasa = {
         },
         {
           "name": "Jenni Sidey-Gibbons",
+          "wikipedia_link": "",
           "age_at_selection": 29,
           "highest_degree": "PhD",
           "education": "Jesus College Cambridge",
@@ -251,6 +294,7 @@ let nasa = {
         },
         {
           "name": "Robb Kulin (resigned before training)",
+          "wikipedia_link": "",
           "age_at_selection": 34,
           "highest_degree": "PhD",
           "education": "University of California San Diego",
@@ -268,6 +312,7 @@ let nasa = {
       "astronauts": [
         {
           "name": "Josh A. Cassada",
+          "wikipedia_link": "",
           "age_at_selection": 40,
           "highest_degree": "PhD",
           "education": "University of Rochester",
@@ -277,6 +322,7 @@ let nasa = {
         },
         {
           "name": "Victor J. Glover, Jr.",
+          "wikipedia_link": "",
           "age_at_selection": 37,
           "highest_degree": "MS",
           "education": "Naval Postgraduate School; Air University",
@@ -286,6 +332,7 @@ let nasa = {
         },
         {
           "name": "Nick Hague",
+          "wikipedia_link": "",
           "age_at_selection": 38,
           "highest_degree": "MS",
           "education": "MIT",
@@ -295,6 +342,7 @@ let nasa = {
         },
         {
           "name": "Christina H. Koch",
+          "wikipedia_link": "",
           "age_at_selection": 34,
           "highest_degree": "MS",
           "education": "North Carolina State University",
@@ -304,6 +352,7 @@ let nasa = {
         },
         {
           "name": "Nicole A. Mann",
+          "wikipedia_link": "",
           "age_at_selection": 36,
           "highest_degree": "MS",
           "education": "Stanford",
@@ -313,6 +362,7 @@ let nasa = {
         },
         {
           "name": "Anne C. McClain",
+          "wikipedia_link": "",
           "age_at_selection": 34,
           "highest_degree": "MS",
           "education": "University of Bath; University of Bristol",
@@ -322,6 +372,7 @@ let nasa = {
         },
         {
           "name": "Jessica U. Meir",
+          "wikipedia_link": "",
           "age_at_selection": 36,
           "highest_degree": "PhD",
           "education": "UC San Diego",
@@ -331,6 +382,7 @@ let nasa = {
         },
         {
           "name": "Andrew R. Morgan",
+          "wikipedia_link": "",
           "age_at_selection": 37,
           "highest_degree": "MD",
           "education": "Uniformed Services University of the Health Sciences",
@@ -348,6 +400,7 @@ let nasa = {
       "astronauts": [
         {
           "name": "Serena M. Aunon",
+          "wikipedia_link": "",
           "age_at_selection": 33,
           "highest_degree": "MPH",
           "education": "UT Galveston",
@@ -357,6 +410,7 @@ let nasa = {
         },
         {
           "name": "Jeanette J Epps",
+          "wikipedia_link": "",
           "age_at_selection": 39,
           "highest_degree": "PhD",
           "education": "University of Maryland College Park",
@@ -366,6 +420,7 @@ let nasa = {
         },
         {
           "name": "Jack D Fischer",
+          "wikipedia_link": "",
           "age_at_selection": 35,
           "highest_degree": "MS",
           "education": "MIT",
@@ -375,6 +430,7 @@ let nasa = {
         },
         {
           "name": "Michael S Hopkins",
+          "wikipedia_link": "",
           "age_at_selection": 41,
           "highest_degree": "MS",
           "education": "Stanford",
@@ -384,6 +440,7 @@ let nasa = {
         },
         {
           "name": "Kjell N Lindgren",
+          "wikipedia_link": "",
           "age_at_selection": 36,
           "highest_degree": "MPH",
           "education": "UT Galveston",
@@ -393,6 +450,7 @@ let nasa = {
         },
         {
           "name": "Kathleen Rubins",
+          "wikipedia_link": "",
           "age_at_selection": 31,
           "highest_degree": "PhD",
           "education": "Stanford University",
@@ -402,6 +460,7 @@ let nasa = {
         },
         {
           "name": "Scott D Tingle",
+          "wikipedia_link": "",
           "age_at_selection": 44,
           "highest_degree": "MS",
           "education": "Purdue",
@@ -411,6 +470,7 @@ let nasa = {
         },
         {
           "name": "Mark T. Vande Hei",
+          "wikipedia_link": "",
           "age_at_selection": 43,
           "highest_degree": "MS",
           "education": "Stanford",
@@ -420,6 +480,7 @@ let nasa = {
         },
         {
           "name": "Gregory R Wiseman",
+          "wikipedia_link": "",
           "age_at_selection": 34,
           "highest_degree": "MS",
           "education": "Johns Hopkins",
@@ -429,6 +490,7 @@ let nasa = {
         },
         {
           "name": "Jeremy Hansen",
+          "wikipedia_link": "",
           "age_at_selection": 33,
           "highest_degree": "MSc",
           "education": "Royal Military College",
@@ -438,6 +500,7 @@ let nasa = {
         },
         {
           "name": "Norishige Kanai",
+          "wikipedia_link": "",
           "age_at_selection": 33,
           "highest_degree": "MD",
           "education": "National Defense Medical College",
@@ -447,6 +510,7 @@ let nasa = {
         },
         {
           "name": "Takuya Onishi",
+          "wikipedia_link": "",
           "age_at_selection": 34,
           "highest_degree": "BEng",
           "education": "University of Tokyo",
@@ -456,6 +520,7 @@ let nasa = {
         },
         {
           "name": "David Saint-Jacques",
+          "wikipedia_link": "",
           "age_at_selection": 39,
           "highest_degree": "PhD",
           "education": "Corpus Christi College Cambridge",
@@ -465,6 +530,7 @@ let nasa = {
         },
         {
           "name": "Kimiya Yui",
+          "wikipedia_link": "",
           "age_at_selection": 39,
           "highest_degree": "BS",
           "education": "National Defense Academy of Japan",
@@ -482,6 +548,7 @@ let nasa = {
       "astronauts": [
         {
           "name": "Joseph M Acaba",
+          "wikipedia_link": "",
           "age_at_selection": 37,
           "highest_degree": "MEd",
           "education": "Texas Tech University",
@@ -491,6 +558,7 @@ let nasa = {
         },
         {
           "name": "Richard R Arnold",
+          "wikipedia_link": "",
           "age_at_selection": 41,
           "highest_degree": "MS",
           "education": "University of Maryland College Park",
@@ -500,6 +568,7 @@ let nasa = {
         },
         {
           "name": "Randolph Bresnik",
+          "wikipedia_link": "",
           "age_at_selection": 37,
           "highest_degree": "MS",
           "education": "University of Tennessee Knoxville",
@@ -509,6 +578,7 @@ let nasa = {
         },
         {
           "name": "Christopher Cassidy",
+          "wikipedia_link": "",
           "age_at_selection": 34,
           "highest_degree": "MS",
           "education": "MIT",
@@ -518,6 +588,7 @@ let nasa = {
         },
         {
           "name": "James Dutton",
+          "wikipedia_link": "",
           "age_at_selection": 36,
           "highest_degree": "MS",
           "education": "University of Washington",
@@ -527,6 +598,7 @@ let nasa = {
         },
         {
           "name": "Jose Moreno Hernandez",
+          "wikipedia_link": "",
           "age_at_selection": 42,
           "highest_degree": "MS",
           "education": "UC Santa Barbara",
@@ -536,6 +608,7 @@ let nasa = {
         },
         {
           "name": "Robert S Kimbrough",
+          "wikipedia_link": "",
           "age_at_selection": 37,
           "highest_degree": "MS",
           "education": "Georgia Institute of Technology",
@@ -545,6 +618,7 @@ let nasa = {
         },
         {
           "name": "Thomas Marshburn",
+          "wikipedia_link": "",
           "age_at_selection": 44,
           "highest_degree": "MS",
           "education": "UT Galveston",
@@ -554,6 +628,7 @@ let nasa = {
         },
         {
           "name": "Dorothy Metcalf-Lindenburger",
+          "wikipedia_link": "",
           "age_at_selection": 29,
           "highest_degree": "MS",
           "education": "University of Washington",
@@ -563,6 +638,7 @@ let nasa = {
         },
         {
           "name": "Robert Satcher",
+          "wikipedia_link": "",
           "age_at_selection": 39,
           "highest_degree": "PhD",
           "education": "MIT",
@@ -572,6 +648,7 @@ let nasa = {
         },
         {
           "name": "Shannon Walker",
+          "wikipedia_link": "",
           "age_at_selection": 39,
           "highest_degree": "PhD",
           "education": "Rice University",

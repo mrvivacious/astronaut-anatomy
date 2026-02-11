@@ -20,6 +20,8 @@ Eventually support additionaly agencies ie. ESA ISRO JAXA
 
 maybe some charts or diagrams for visual folks
 
+eventually share on r/astronauthopefuls and r/dataisbeautiful
+
 ### notes from chatgpt
 
 #### on international agency data

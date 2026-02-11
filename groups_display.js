@@ -70,6 +70,13 @@ function displayGroupsInfo() {
       for (let k = 0; k < cells.length; k++) {
         let td = document.createElement('td');
         td.innerText = cells[k];
+
+        console.log(td.innerText)
+        // todo this can be optimized somehow, especially when we make more stuff clickable...
+        if (k === 0) {
+          td.innerHTML = `<a href="${astronaut.wikipedia_link}" target="_blank">${td.innerText}</a>`;        
+        }
+
         row.appendChild(td);
       }
       tbody.appendChild(row);
