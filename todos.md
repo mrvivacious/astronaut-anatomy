@@ -102,3 +102,13 @@ Not a profile.
 A set of links that justify selection.
 That’s aligned with everything you’ve built so far.
 ```
+
+
+
+Data collection - Finish NASA Groups. Add ESA. Add JAXA, ISRO....etc -> this becomes a resource for any prospective astronaut in any country with a space program. 
+
+UI enhancements - Pick better colors. Accessibility friendly. Tables and graphs to better illustrate trends-over-time. Add links to anything that can be linked (university names, astronaut wikipedia pages, etc). Icons in the Group table view to make it easier to glance and glean information. [FUTURE] maybe a "space look and feel"...etc. 
+
+Stats with contexts - As you've emphasized, add disclaimers and supporting information so students don't view the data as an absolute source of truth. IE. "Masters degree recipients closed the gap by gaining a lot of hands on experience through the military or these special projects. learn more by clicking on the astronaut's name" etc 
+
+Finally, the "Gap Closing" research. Actually sitting and comparing astronaut career experiences against the missions they were chosen for will take significant time. so, this will probably have to be rolled out group-by-group. but it will be quite useful, should anyone actually find the website.

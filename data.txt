@@ -1,80 +1,10 @@
-Source: NASA Astronaut corps wikipedia page 
-name, selection year, age at selection, highest degree, military experience, prior professional domain
-
-Group 23 - 12,000 applications
-  Nichole Ayers, 2021, 33, MS Rice University, USAF,
-  Marcos Berrios, 2021, 37, PHD Stanford, null,
-  Chris Birch, 2021, 35, PHD MIT, null,
-  Deniz Burnham, 2021, 36, MS USC, null,
-  Luke Delaney, 2021, 42, MS Naval Postgraduate School, USMC,
-  Andre Douglas, 2021, 36, PHD George Washington University, US Coast Guard,
-  Jack Hathaway, 2021, 39, MS Cranfield University MS Naval War College, null,
-  Anil Menon, 2021, 45, MS MD Stanford MPH UT Medical Branch, null,
-  Christopher L. Williams, 2021, 38, PHD MIT, null,
-  Jessica Wittner, 2021, 38, MS Naval Postgraduate School, US Navy
-  +Nora Al Matrooshi (UAE), 28, BS UAEU, null
-  +Mohammed Al Mulla (UAE), 33, Exec. Master's Public Administration MBR Sc. of Gov., Dubai Police
-
-Group 22 - 18,300 applications
-  Kayla Barron, 2017, 30, MPhil Peterhouse Cambridge, US Navy
-  Zena Cardman, 2017, 30, MS UNC Chapel Hill, 
-  Raja Chari, 2017, 40, MS MIT, US Air Force
-  Matthew Dominick, 2017, 32, MS Naval Postgraduate school, US Navy
-  Bob Hines, 2017, 38, MS US Air Force Test Pilot School MS UofAlabama, US Air Force
-  Warren Hoburg, 2017, 32, PHD UC Berkeley, null
-  Jonny Kim, 2017, 33, MD Harvard, US Navy (seal)
-  Jasmin Moghbeli, 2017, 34, MS Naval Postgraduate school BS MIT, USMC
-  Loral O’Hara, 2017, 34, MS Purdue, null
-  Frank Rubio, 2017, 42, MD Uniformed Services University of the Health Sciences, US Army
-  Jessica Watkins, 2017, 29, PHD UCLA BS Stanford, null
-  +Joshua Kutryk (Canada), 35, MSC Embry Riddle MSC Air University, Royal Canadian Air Force
-  +Jenni Sidey-Gibbons (Canada), 29, PHD Jesus College Cambridge, null
-  *Robb Kulin (resigned before training), 2017, 34, PHD UCSD, null
-
-Group 21 - 6,300 applications
-  Josh A. Cassada, 2013, 40, PHD U of Rochester, US Navy
-  Victor J. Glover, Jr., 2013, 37, MS Naval PG School MS Air Uni, US Navy
-  Nick Hague, 2013, 38, MS MIT, US Air Force Space Force
-  Christina H. Koch, 2013, 34, MS North Carolina State Uni, null
-  Nicole A. Mann, 2013, 36, MS Stanford, USMC
-  Anne C. McClain, 2013, 34, MS U of Bath MA U of Bristol, US Army
-  Jessica U. Meir, 2013, 36, PHD UCSD, null
-  Andrew R. Morgan, 2013, 37, MD Uni Serv Uni of Health Sci., US Army
-
-Group 20 (2009)
-  Serena M. Aunon, 33, MPH UT Galveston, null
-  Jeanette J Epps, 39, PHD UofM College Park, null
-  Jack D Fischer, 35, MS MIT, US Air force
-  Michael S Hopkins, 41, MS Stanford, US Space force
-  Kjell N Lindgren, 36, MPH UT Galveston, US AF ?
-  Kathleen Rubins, 31, PHD Stanford, null
-  Scott D Tingle, 44, MS Purdue, US Navy
-  Mark T. Vande Hei, 43, MS Stanford, Army
-  Gregory R Wiseman, 34, MS John Hopkins, USN
-  +Jeremy Hansen (CSA), 33, MSc Royal Military College, RC AF
-  +Norishige Kanai (JAXA), 33, MD National Defense Medical College, null?
-  +Takuya Onishi (JAXA), 34, BEng UTokyo, null
-  +David Saint-Jacques (CSA), 39, PHD Corpus Christi College Cambridge, null
-  +Kimiya Yui (JAXA), 39, BS National Def. Academy of Japan, Japan Air Self defense force
-  
-Group 19 (2004)
-  Joseph M Acaba, 37, MEd Texas Tech U, USMCR
-  Richard R Arnold, 41, MS UM College Park, null
-  Randolph Bresnik, 37, MS UT Knoxville, USMC
-  Christopher Cassidy, 34, MS MIT, USN seal
-  James Dutton, 36, MS UWashington, USAF
-  Jose Moreno Hernandez, 42, MS UCSB, null
-  Robert S Kimbrough, 37, MS Georgia Institute of Technology, USA
-  Thomas Marshburn, 44, MS UT Galveston, null
-  Dorothy Metcalf-Lindenburger, 29, MS UWashington, null
-  Robert Satcher, 39, PHD MIT, null
-  Shannon Walker, 39, PHD Rice, null
+source:
+https://en.wikipedia.org/wiki/NASA_Astronaut_Corps#Selection_groups
 
 
----
-
+- notes -
  
-notes group 23:
+group 23:
 4:6 women:men
 youngest is 33
 oldest is 45. gap of 12 years!
