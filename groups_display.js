@@ -71,10 +71,21 @@ function displayGroupsInfo() {
         let td = document.createElement('td');
         td.innerText = cells[k];
 
-        console.log(td.innerText)
         // todo this can be optimized somehow, especially when we make more stuff clickable...
         if (k === 0 && astronaut.wikipedia_link) {
           td.innerHTML = `<a href="${astronaut.wikipedia_link}" target="_blank" rel="noopener noreferrer">${td.innerText}</a>`;        
+        }
+
+        if (k === 3 && astronaut.degrees) {
+          let t = '';
+          for (degree in astronaut.degrees) {
+            let degreeInfo = astronaut.degrees[degree]
+            console.log(degreeInfo)
+            t += `${degreeInfo.level} ${degreeInfo.field} (${degreeInfo.institution})<br><br>`;
+          }
+
+          t = t.substring(0, t.length - 8); // remove last <br><br>
+          td.innerHTML = t;
         }
 
         row.appendChild(td);

@@ -57,7 +57,30 @@ let nasa = {
           "education": "Stanford University",
           "military_experience": null,
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": [
+            {
+              "level": "BS",
+              "field": "Mechanical Engineering",
+              "category": "Engineering",
+              "institution": "Massachusetts Institute of Technology",
+              "year_completed": null
+            },
+            {
+              "level": "MS",
+              "field": "Mechanical Engineering",
+              "category": "Engineering",
+              "institution": "Stanford University",
+              "year_completed": null
+            },
+            {
+              "level": "PhD",
+              "field": "Aeronautics and Astronautics",
+              "category": "Engineering",
+              "institution": "Stanford University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Chris Birch",
