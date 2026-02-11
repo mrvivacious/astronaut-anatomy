@@ -1,6 +1,4 @@
-// groups_display.js
-
-function displayGroupsInfo() {
+function displayGroupsInfo(filters = {}) {
   let groupNames = getGroupNames();
   
   // Sort groups by selection year in descending order (newest first)
@@ -53,7 +51,17 @@ function displayGroupsInfo() {
 
     // Table body
     let tbody = document.createElement('tbody');
-    let astronauts = group.astronauts;
+
+    let astronauts = group.astronauts.filter(astronaut => {
+      if (filters.military === 'military') {
+        return astronaut.military_experience;
+      }
+      if (filters.military === 'civilian') {
+        return !astronaut.military_experience;
+      }
+        return true;
+    });
+    if (astronauts.length === 0) continue; // don't show empty groups
     for (let j = 0; j < astronauts.length; j++) {
       let astronaut = astronauts[j];
       let row = document.createElement('tr');
@@ -97,4 +105,17 @@ function displayGroupsInfo() {
   }
 }
 
+function setupFilters() {
+  const militarySelect = document.getElementById('military_filter');
+
+  militarySelect.addEventListener('change', () => {
+    const filters = {
+      military: militarySelect.value
+    };
+
+    displayGroupsInfo(filters);
+  });
+}
+
+setupFilters();
 displayGroupsInfo();
