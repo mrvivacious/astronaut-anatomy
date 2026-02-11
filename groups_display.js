@@ -73,7 +73,7 @@ function displayGroupsInfo() {
 
         console.log(td.innerText)
         // todo this can be optimized somehow, especially when we make more stuff clickable...
-        if (k === 0) {
+        if (k === 0 && astronaut.wikipedia_link) {
           td.innerHTML = `<a href="${astronaut.wikipedia_link}" target="_blank" rel="noopener noreferrer">${td.innerText}</a>`;        
         }
 
