@@ -394,7 +394,15 @@ let nasa = {
           "military_experience": "US Navy",
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Zena Cardman",
@@ -405,7 +413,15 @@ let nasa = {
           "military_experience": null,
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Raja Chari",
@@ -416,7 +432,15 @@ let nasa = {
           "military_experience": "US Air Force",
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Matthew Dominick",
@@ -427,7 +451,15 @@ let nasa = {
           "military_experience": "US Navy",
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Bob Hines",
@@ -438,7 +470,15 @@ let nasa = {
           "military_experience": "US Air Force",
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Warren Hoburg",
@@ -449,7 +489,15 @@ let nasa = {
           "military_experience": null,
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Jonny Kim",
@@ -460,7 +508,15 @@ let nasa = {
           "military_experience": "US Navy SEAL",
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Jasmin Moghbeli",
@@ -471,7 +527,15 @@ let nasa = {
           "military_experience": "USMC",
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Loral O'Hara",
@@ -482,7 +546,15 @@ let nasa = {
           "military_experience": null,
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Frank Rubio",
@@ -493,7 +565,15 @@ let nasa = {
           "military_experience": "US Army",
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Jessica Watkins",
@@ -504,7 +584,15 @@ let nasa = {
           "military_experience": null,
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Joshua Kutryk",
@@ -515,7 +603,15 @@ let nasa = {
           "military_experience": "Royal Canadian Air Force",
           "nationality": "Canada",
           "is_international": true,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Jenni Sidey-Gibbons",
@@ -526,7 +622,15 @@ let nasa = {
           "military_experience": null,
           "nationality": "Canada",
           "is_international": true,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Robb Kulin (resigned before training)",
@@ -537,7 +641,15 @@ let nasa = {
           "military_experience": null,
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         }
       ]
     },
@@ -556,7 +668,15 @@ let nasa = {
           "military_experience": "US Navy",
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Victor J. Glover, Jr.",
@@ -567,7 +687,15 @@ let nasa = {
           "military_experience": "US Navy",
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Nick Hague",
@@ -578,7 +706,15 @@ let nasa = {
           "military_experience": "US Air Force Space Force",
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Christina H. Koch",
@@ -589,7 +725,15 @@ let nasa = {
           "military_experience": null,
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Nicole A. Mann",
@@ -600,7 +744,15 @@ let nasa = {
           "military_experience": "USMC",
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Anne C. McClain",
@@ -611,7 +763,15 @@ let nasa = {
           "military_experience": "US Army",
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Jessica U. Meir",
@@ -622,7 +782,15 @@ let nasa = {
           "military_experience": null,
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Andrew R. Morgan",
@@ -633,7 +801,15 @@ let nasa = {
           "military_experience": "US Army",
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         }
       ]
     },
@@ -652,7 +828,15 @@ let nasa = {
           "military_experience": null,
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Jeanette J Epps",
@@ -663,7 +847,15 @@ let nasa = {
           "military_experience": null,
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Jack D Fischer",
@@ -674,7 +866,15 @@ let nasa = {
           "military_experience": "US Air Force",
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Michael S Hopkins",
@@ -685,7 +885,15 @@ let nasa = {
           "military_experience": "US Space Force",
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Kjell N Lindgren",
@@ -696,7 +904,15 @@ let nasa = {
           "military_experience": "US Air Force",
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Kathleen Rubins",
@@ -707,7 +923,15 @@ let nasa = {
           "military_experience": null,
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Scott D Tingle",
@@ -718,7 +942,15 @@ let nasa = {
           "military_experience": "US Navy",
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Mark T. Vande Hei",
@@ -729,7 +961,15 @@ let nasa = {
           "military_experience": "US Army",
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Gregory R Wiseman",
@@ -740,7 +980,15 @@ let nasa = {
           "military_experience": "US Navy",
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Jeremy Hansen",
@@ -751,7 +999,15 @@ let nasa = {
           "military_experience": "Royal Canadian Air Force",
           "nationality": "Canada",
           "is_international": true,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Norishige Kanai",
@@ -762,7 +1018,15 @@ let nasa = {
           "military_experience": null,
           "nationality": "Japan",
           "is_international": true,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Takuya Onishi",
@@ -773,7 +1037,15 @@ let nasa = {
           "military_experience": null,
           "nationality": "Japan",
           "is_international": true,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "David Saint-Jacques",
@@ -784,7 +1056,15 @@ let nasa = {
           "military_experience": null,
           "nationality": "Canada",
           "is_international": true,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Kimiya Yui",
@@ -795,7 +1075,15 @@ let nasa = {
           "military_experience": "Japan Air Self Defense Force",
           "nationality": "Japan",
           "is_international": true,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         }
       ]
     },
@@ -814,7 +1102,15 @@ let nasa = {
           "military_experience": "USMCR",
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Richard R Arnold",
@@ -825,7 +1121,15 @@ let nasa = {
           "military_experience": null,
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Randolph Bresnik",
@@ -836,7 +1140,15 @@ let nasa = {
           "military_experience": "USMC",
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Christopher Cassidy",
@@ -847,7 +1159,15 @@ let nasa = {
           "military_experience": "US Navy SEAL",
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "James Dutton",
@@ -858,7 +1178,15 @@ let nasa = {
           "military_experience": "USAF",
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Jose Moreno Hernandez",
@@ -869,7 +1197,15 @@ let nasa = {
           "military_experience": null,
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Robert S Kimbrough",
@@ -880,7 +1216,15 @@ let nasa = {
           "military_experience": "army",
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Thomas Marshburn",
@@ -891,7 +1235,15 @@ let nasa = {
           "military_experience": null,
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Dorothy Metcalf-Lindenburger",
@@ -902,7 +1254,15 @@ let nasa = {
           "military_experience": null,
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Robert Satcher",
@@ -913,7 +1273,15 @@ let nasa = {
           "military_experience": null,
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Shannon Walker",
@@ -924,7 +1292,15 @@ let nasa = {
           "military_experience": null,
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Engineering"],
+              "category": "Engineering",
+              "institution": "University",
+              "year_completed": null
+            }
+          ]
         }
       ]
     }
