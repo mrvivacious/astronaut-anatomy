@@ -216,7 +216,29 @@ let nasa = {
           "military_experience": null,
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Physics and History"],
+              "category": "Engineering", // todo fix
+              "institution": "United States Naval Academy",
+              "year_completed": 2004
+            },
+            {
+              "level": "MS",
+              "fields": ["Aerospace Dynamics"],
+              "category": "Engineering",
+              "institution": "Cranfield University",
+              "year_completed": 2014
+            },
+            {
+              "level": "MS",
+              "fields": ["National Security and Strategic Studies"],
+              "category": "Engineering",
+              "institution": "United States Naval War College",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Anil Menon",
@@ -227,7 +249,36 @@ let nasa = {
           "military_experience": null,
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Neurobiology"],
+              "category": "Biology",
+              "institution": "Harvard University",
+              "year_completed": 1999
+            },
+            {
+              "level": "MS",
+              "fields": [],
+              "category": "",
+              "institution": "Stanford University",
+              "year_completed": null
+            },
+            {
+              "level": "MD",
+              "fields": [],
+              "category": "",
+              "institution": "Stanford University",
+              "year_completed": null
+            },
+            {
+              "level": "MPH",
+              "fields": [],
+              "category": "",
+              "institution": "University of Texas Medical Branch",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Christopher L. Williams",
@@ -238,7 +289,22 @@ let nasa = {
           "military_experience": null,
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Physics"],
+              "category": "Physics",
+              "institution": "Stanford University",
+              "year_completed": 2005
+            },
+            {
+              "level": "PhD",
+              "fields": ["Physics"],
+              "category": "Physics", //todo
+              "institution": "Massachusetts Institute of Technology",
+              "year_completed": 2012
+            }
+          ]
         },
         {
           "name": "Jessica Wittner",
@@ -249,7 +315,22 @@ let nasa = {
           "military_experience": "US Navy",
           "nationality": "USA",
           "is_international": false,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Aerospace Engineering"],
+              "category": "Engineering",
+              "institution": "University of Arizona",
+              "year_completed": null
+            },
+            {
+              "level": "MS",
+              "fields": ["Aerospace Engineering"],
+              "category": "Engineering", //todo
+              "institution": "United States Naval Postgraduate School",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Nora Al Matrooshi",
@@ -260,7 +341,15 @@ let nasa = {
           "military_experience": null,
           "nationality": "UAE",
           "is_international": true,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Mechanical Engineering"],
+              "category": "Engineering",
+              "institution": "United Arab Emirates University",
+              "year_completed": null
+            }
+          ]
         },
         {
           "name": "Mohammed Al Mulla",
@@ -271,7 +360,22 @@ let nasa = {
           "military_experience": "Dubai Police",
           "nationality": "UAE",
           "is_international": true,
-          "degrees": []
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Law and Economics"],
+              "category": "", //todo
+              "institution": "Mohammed Bin Rashid School of Government",
+              "year_completed": 2015
+            },
+            {
+              "level": "EMPA",
+              "fields": ["Public Administration"],
+              "category": "", //todo
+              "institution": "Mohammed Bin Rashid School of Government",
+              "year_completed": 2021
+            }
+          ]
         }
       ]
     },
