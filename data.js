@@ -94,11 +94,18 @@ let nasa = {
           "degrees": [
             {
               "level": "BS",
-              "fields": ["TODO"],
-              "category": "Engineering",
-              "institution": "",
+              "fields": ["Mathematics", "Biochemistry", "Molecular Biophysics"],
+              "category": "Engineering", // TODO this probably should be an array
+              "institution": "University of Arizona",
               "year_completed": null
             },
+            {
+              "level": "PhD",
+              "fields": ["Biological Engineering"],
+              "category": "Engineering",
+              "institution": "Massachusetts Institute of Technology",
+              "year_completed": 2015
+            }
           ]
         },
         {
@@ -113,10 +120,17 @@ let nasa = {
           "degrees": [
             {
               "level": "BS",
-              "fields": ["TODO"],
+              "fields": ["Chemical Engineering"],
               "category": "Engineering",
-              "institution": "",
-              "year_completed": null
+              "institution": "University of California, San Diego",
+              "year_completed": 2007
+            },
+            {
+              "level": "MS",
+              "fields": ["Mechanical Engineering"],
+              "category": "Engineering",
+              "institution": "Unviersity of Southern California",
+              "year_completed": 2017
             },
           ]
         },
@@ -128,7 +142,23 @@ let nasa = {
           "education": "Naval Postgraduate School",
           "military_experience": "USMC",
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Mechanical Engineering"],
+              "category": "Engineering",
+              "institution": "University of North Florida",
+              "year_completed": null
+            },
+            {
+              "level": "MS",
+              "fields": ["Aerospace Engineering"],
+              "category": "Engineering",
+              "institution": "Naval Postgraduate School",
+              "year_completed": null
+            },
+          ]
         },
         {
           "name": "Andre Douglas",
@@ -138,7 +168,44 @@ let nasa = {
           "education": "George Washington University",
           "military_experience": "US Coast Guard",
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Mechanical Engineering"],
+              "category": "Engineering",
+              "institution": "United States Coast Guard Academy",
+              "year_completed": 2008
+            },
+            {
+              "level": "MS",
+              "fields": ["Mechanical Engineering"],
+              "category": "Engineering",
+              "institution": "University of Michigan",
+              "year_completed": 2012
+            },
+            {
+              "level": "MS",
+              "fields": ["Naval Architecture and Marine Engineering"],
+              "category": "Engineering",
+              "institution": "University of Michigan",
+              "year_completed": 2012
+            },
+            {
+              "level": "MS",
+              "fields": ["Electrical and Computer Engineering"],
+              "category": "Engineering",
+              "institution": "Johns Hopkins University",
+              "year_completed": 2019
+            },
+            {
+              "level": "PhD",
+              "fields": ["Systems Engineering"],
+              "category": "Engineering",
+              "institution": "George Washington University",
+              "year_completed": 2021
+            }
+          ]
         },
         {
           "name": "Jack Hathaway",
@@ -148,7 +215,8 @@ let nasa = {
           "education": "Cranfield University; Naval War College",
           "military_experience": null,
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "Anil Menon",
@@ -158,7 +226,8 @@ let nasa = {
           "education": "Stanford University; UT Medical Branch",
           "military_experience": null,
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "Christopher L. Williams",
@@ -168,7 +237,8 @@ let nasa = {
           "education": "MIT",
           "military_experience": null,
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "Jessica Wittner",
@@ -178,7 +248,8 @@ let nasa = {
           "education": "Naval Postgraduate School",
           "military_experience": "US Navy",
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "Nora Al Matrooshi",
@@ -188,7 +259,8 @@ let nasa = {
           "education": "UAE University",
           "military_experience": null,
           "nationality": "UAE",
-          "is_international": true
+          "is_international": true,
+          "degrees": []
         },
         {
           "name": "Mohammed Al Mulla",
@@ -198,7 +270,8 @@ let nasa = {
           "education": "Mohammed Bin Rashid School of Government",
           "military_experience": "Dubai Police",
           "nationality": "UAE",
-          "is_international": true
+          "is_international": true,
+          "degrees": []
         }
       ]
     },
@@ -216,7 +289,8 @@ let nasa = {
           "education": "Peterhouse, Cambridge",
           "military_experience": "US Navy",
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "Zena Cardman",
@@ -226,7 +300,8 @@ let nasa = {
           "education": "UNC Chapel Hill",
           "military_experience": null,
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "Raja Chari",
@@ -236,7 +311,8 @@ let nasa = {
           "education": "MIT",
           "military_experience": "US Air Force",
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "Matthew Dominick",
@@ -246,7 +322,8 @@ let nasa = {
           "education": "Naval Postgraduate School",
           "military_experience": "US Navy",
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "Bob Hines",
@@ -256,7 +333,8 @@ let nasa = {
           "education": "US Air Force Test Pilot School; University of Alabama",
           "military_experience": "US Air Force",
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "Warren Hoburg",
@@ -266,7 +344,8 @@ let nasa = {
           "education": "UC Berkeley",
           "military_experience": null,
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "Jonny Kim",
@@ -276,7 +355,8 @@ let nasa = {
           "education": "Harvard",
           "military_experience": "US Navy SEAL",
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "Jasmin Moghbeli",
@@ -286,7 +366,8 @@ let nasa = {
           "education": "Naval Postgraduate School; MIT",
           "military_experience": "USMC",
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "Loral O'Hara",
@@ -296,7 +377,8 @@ let nasa = {
           "education": "Purdue",
           "military_experience": null,
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "Frank Rubio",
@@ -306,7 +388,8 @@ let nasa = {
           "education": "Uniformed Services University of the Health Sciences",
           "military_experience": "US Army",
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "Jessica Watkins",
@@ -316,7 +399,8 @@ let nasa = {
           "education": "UCLA; Stanford",
           "military_experience": null,
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "Joshua Kutryk",
@@ -326,7 +410,8 @@ let nasa = {
           "education": "Embry Riddle; Air University",
           "military_experience": "Royal Canadian Air Force",
           "nationality": "Canada",
-          "is_international": true
+          "is_international": true,
+          "degrees": []
         },
         {
           "name": "Jenni Sidey-Gibbons",
@@ -336,7 +421,8 @@ let nasa = {
           "education": "Jesus College Cambridge",
           "military_experience": null,
           "nationality": "Canada",
-          "is_international": true
+          "is_international": true,
+          "degrees": []
         },
         {
           "name": "Robb Kulin (resigned before training)",
@@ -346,7 +432,8 @@ let nasa = {
           "education": "University of California San Diego",
           "military_experience": null,
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         }
       ]
     },
@@ -364,7 +451,8 @@ let nasa = {
           "education": "University of Rochester",
           "military_experience": "US Navy",
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "Victor J. Glover, Jr.",
@@ -374,7 +462,8 @@ let nasa = {
           "education": "Naval Postgraduate School; Air University",
           "military_experience": "US Navy",
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "Nick Hague",
@@ -384,7 +473,8 @@ let nasa = {
           "education": "MIT",
           "military_experience": "US Air Force Space Force",
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "Christina H. Koch",
@@ -394,7 +484,8 @@ let nasa = {
           "education": "North Carolina State University",
           "military_experience": null,
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "Nicole A. Mann",
@@ -404,7 +495,8 @@ let nasa = {
           "education": "Stanford",
           "military_experience": "USMC",
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "Anne C. McClain",
@@ -414,7 +506,8 @@ let nasa = {
           "education": "University of Bath; University of Bristol",
           "military_experience": "US Army",
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "Jessica U. Meir",
@@ -424,7 +517,8 @@ let nasa = {
           "education": "UC San Diego",
           "military_experience": null,
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "Andrew R. Morgan",
@@ -434,7 +528,8 @@ let nasa = {
           "education": "Uniformed Services University of the Health Sciences",
           "military_experience": "US Army",
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         }
       ]
     },
@@ -452,7 +547,8 @@ let nasa = {
           "education": "UT Galveston",
           "military_experience": null,
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "Jeanette J Epps",
@@ -462,7 +558,8 @@ let nasa = {
           "education": "University of Maryland College Park",
           "military_experience": null,
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "Jack D Fischer",
@@ -472,7 +569,8 @@ let nasa = {
           "education": "MIT",
           "military_experience": "US Air Force",
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "Michael S Hopkins",
@@ -482,7 +580,8 @@ let nasa = {
           "education": "Stanford",
           "military_experience": "US Space Force",
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "Kjell N Lindgren",
@@ -492,7 +591,8 @@ let nasa = {
           "education": "UT Galveston",
           "military_experience": "US Air Force",
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "Kathleen Rubins",
@@ -502,7 +602,8 @@ let nasa = {
           "education": "Stanford University",
           "military_experience": null,
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "Scott D Tingle",
@@ -512,7 +613,8 @@ let nasa = {
           "education": "Purdue",
           "military_experience": "US Navy",
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "Mark T. Vande Hei",
@@ -522,7 +624,8 @@ let nasa = {
           "education": "Stanford",
           "military_experience": "US Army",
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "Gregory R Wiseman",
@@ -532,7 +635,8 @@ let nasa = {
           "education": "Johns Hopkins",
           "military_experience": "US Navy",
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "Jeremy Hansen",
@@ -542,7 +646,8 @@ let nasa = {
           "education": "Royal Military College",
           "military_experience": "Royal Canadian Air Force",
           "nationality": "Canada",
-          "is_international": true
+          "is_international": true,
+          "degrees": []
         },
         {
           "name": "Norishige Kanai",
@@ -552,7 +657,8 @@ let nasa = {
           "education": "National Defense Medical College",
           "military_experience": null,
           "nationality": "Japan",
-          "is_international": true
+          "is_international": true,
+          "degrees": []
         },
         {
           "name": "Takuya Onishi",
@@ -562,7 +668,8 @@ let nasa = {
           "education": "University of Tokyo",
           "military_experience": null,
           "nationality": "Japan",
-          "is_international": true
+          "is_international": true,
+          "degrees": []
         },
         {
           "name": "David Saint-Jacques",
@@ -572,7 +679,8 @@ let nasa = {
           "education": "Corpus Christi College Cambridge",
           "military_experience": null,
           "nationality": "Canada",
-          "is_international": true
+          "is_international": true,
+          "degrees": []
         },
         {
           "name": "Kimiya Yui",
@@ -582,7 +690,8 @@ let nasa = {
           "education": "National Defense Academy of Japan",
           "military_experience": "Japan Air Self Defense Force",
           "nationality": "Japan",
-          "is_international": true
+          "is_international": true,
+          "degrees": []
         }
       ]
     },
@@ -600,7 +709,8 @@ let nasa = {
           "education": "Texas Tech University",
           "military_experience": "USMCR",
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "Richard R Arnold",
@@ -610,7 +720,8 @@ let nasa = {
           "education": "University of Maryland College Park",
           "military_experience": null,
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "Randolph Bresnik",
@@ -620,7 +731,8 @@ let nasa = {
           "education": "University of Tennessee Knoxville",
           "military_experience": "USMC",
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "Christopher Cassidy",
@@ -630,7 +742,8 @@ let nasa = {
           "education": "MIT",
           "military_experience": "US Navy SEAL",
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "James Dutton",
@@ -640,7 +753,8 @@ let nasa = {
           "education": "University of Washington",
           "military_experience": "USAF",
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "Jose Moreno Hernandez",
@@ -650,7 +764,8 @@ let nasa = {
           "education": "UC Santa Barbara",
           "military_experience": null,
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "Robert S Kimbrough",
@@ -660,7 +775,8 @@ let nasa = {
           "education": "Georgia Institute of Technology",
           "military_experience": "army",
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "Thomas Marshburn",
@@ -670,7 +786,8 @@ let nasa = {
           "education": "UT Galveston",
           "military_experience": null,
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "Dorothy Metcalf-Lindenburger",
@@ -680,7 +797,8 @@ let nasa = {
           "education": "University of Washington",
           "military_experience": null,
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "Robert Satcher",
@@ -690,7 +808,8 @@ let nasa = {
           "education": "MIT",
           "military_experience": null,
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         },
         {
           "name": "Shannon Walker",
@@ -700,7 +819,8 @@ let nasa = {
           "education": "Rice University",
           "military_experience": null,
           "nationality": "USA",
-          "is_international": false
+          "is_international": false,
+          "degrees": []
         }
       ]
     }

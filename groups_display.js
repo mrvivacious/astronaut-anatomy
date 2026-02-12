@@ -87,7 +87,7 @@ function displayGroupsInfo(filters = {}) {
         if (k === 3 && astronaut.degrees) {
           const lines = astronaut.degrees.map(degreeInfo => {
             const fieldsText = degreeInfo.fields?.join(', ') || '';
-            return `${degreeInfo.level} ${fieldsText} (${degreeInfo.institution})`;
+            return `${degreeInfo.level} ${fieldsText}<br>(${degreeInfo.institution})`;
           });
 
           td.innerHTML = lines.join('<br><br>');
