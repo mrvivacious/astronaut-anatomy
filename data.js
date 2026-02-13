@@ -15,6 +15,8 @@
     console.log(links[i].href)
   }
 */
+
+// todo add group 24: https://en.wikipedia.org/wiki/NASA_Astronaut_Group_24
 let nasa = {
   "astronaut_groups": {
     "group_23": {
@@ -234,7 +236,7 @@ let nasa = {
             {
               "level": "MS",
               "fields": ["National Security and Strategic Studies"],
-              "category": "Engineering",
+              "category": "Military Science",
               "institution": "United States Naval War College",
               "year_completed": null
             }
