@@ -25,8 +25,13 @@ let ageAveragesByGroup = ageAveragesObject.averageAgeByGroup;
 let ageAverageAllGroupsElement = document.getElementById('age_all_groups')
 let ageAveragesByGroupElement = document.getElementById('age_by_group')
 
-ageAverageAllGroupsElement.innerText = ageAverageAllGroups;
-ageAveragesByGroupElement.innerText = prettyPrintGroupAverages(ageAveragesByGroup);
+if (ageAverageAllGroupsElement) {
+  ageAverageAllGroupsElement.innerText = ageAverageAllGroups;
+}
+
+if (ageAveragesByGroupElement) {
+  ageAveragesByGroupElement.innerText = prettyPrintGroupAverages(ageAveragesByGroup);
+}
 
 function prettyPrintGroupAverages(ageAveragesByGroup) {
   let output = JSON.stringify(ageAveragesByGroup);

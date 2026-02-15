@@ -1,4 +1,4 @@
-function getDegreeCounts() {
+function getDegreeCounts(filters) {
   const counts = {};
 
   const groupNames = getGroupNames();
@@ -7,6 +7,8 @@ function getDegreeCounts() {
     const group = getGroup(name);
 
     group.astronauts.forEach(astronaut => {
+      if (!passesFilters(astronaut, filters)) return;
+
       const degree = astronaut.highest_degree;
       if (!degree) return;
 
@@ -18,6 +20,19 @@ function getDegreeCounts() {
 }
 
 function drawDegreeChart(filters = { military: 'all', degree: 'all' }) {
+  const degreeRank = {
+  PhD: 1,
+  MD: 2,
+  MS: 3,
+  MEd: 4,
+  MPhil: 5,
+  MSc: 6,
+  MPH: 7,
+  EMPA: 8,
+  BS: 9,
+  BEng: 10
+};
+
   const canvas = document.getElementById('degreeChart');
   const ctx = canvas.getContext('2d');
 
@@ -25,10 +40,20 @@ function drawDegreeChart(filters = { military: 'all', degree: 'all' }) {
   canvas.width = canvas.clientWidth;
   canvas.height = canvas.clientHeight;
 
+  if (!filters) { filters = { military: 'all', degree: 'all' }}
+
   const counts = getDegreeCounts(filters);
 
   const degrees = Object.keys(counts);
-  const values = Object.values(counts);
+  // Sort degrees by seniority using our rank map
+  degrees.sort((a, b) => {
+    const rankA = degreeRank[a] || 999; // fallback for unknown degrees
+    const rankB = degreeRank[b] || 999;
+    return rankA - rankB;
+  });
+
+  const values = degrees.map(degree => counts[degree])
+
 
   if (values.length === 0) return;
 
@@ -60,6 +85,16 @@ function drawDegreeChart(filters = { military: 'all', degree: 'all' }) {
   });
 }
 
+function passesFilters(astronaut, filters) {
+  if (filters.military === 'military' && !astronaut.military_experience) return false;
+  if (filters.military === 'civilian' && astronaut.military_experience) return false;
+
+  if (filters.degree !== 'all') {
+    if (astronaut.highest_degree !== filters.degree) return false;
+  }
+
+  return true;
+}
 
 document.addEventListener("DOMContentLoaded", () => {
   drawDegreeChart();

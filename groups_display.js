@@ -129,6 +129,7 @@ function setupMilitaryFilter() {
   militarySelect.addEventListener('change', () => {
     activeFilters.military = militarySelect.value;
     displayGroupsInfo(activeFilters);
+    drawDegreeChart(activeFilters);
   });
 }
 
@@ -138,6 +139,7 @@ function setupDegreeFilter() {
   degreeSelect.addEventListener('change', () => {
     activeFilters.degree = degreeSelect.value;
     displayGroupsInfo(activeFilters);
+    drawDegreeChart(activeFilters);
   });
 }
 
