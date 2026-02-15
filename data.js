@@ -19,6 +19,280 @@
 // todo add group 24: https://en.wikipedia.org/wiki/NASA_Astronaut_Group_24
 let nasa = {
   "astronaut_groups": {
+    "group_24": {
+      "selection_year": 2025,
+      "applications_received": 8000,
+      "average_age_of_astronauts": 37.6, 
+      "astronauts": [
+        {
+          "name": "Ben Bailey",
+          "wikipedia_link": "https://en.wikipedia.org/wiki/Ben_Bailey_(astronaut)",
+          "age_at_selection": 38,
+          "highest_degree": "BS",
+          "education": "University of Virginia",
+          "military_experience": "US Army",
+          "nationality": "USA",
+          "is_international": false,
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Mechanical Engineering"],
+              "category": "Engineering",
+              "institution": "University of Virginia",
+              "year_completed": null
+            }
+          ]
+        },
+        {
+          "name": "Lauren Edgar",
+          "wikipedia_link": "https://en.wikipedia.org/wiki/Lauren_Edgar",
+          "age_at_selection": 40,
+          "highest_degree": "PhD",
+          "education": "University of Virginia",
+          "military_experience": null,
+          "nationality": "USA",
+          "is_international": false,
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Earth Sciences"],
+              "category": "Science", //todo
+              "institution": "Dartmouth College",
+              "year_completed": 2007
+            },
+             {
+              "level": "MS",
+              "fields": ["Geology"],
+              "category": "Engineering", //todo
+              "institution": "California Institute of Technology",
+              "year_completed": null
+            },
+             {
+              "level": "PhD",
+              "fields": ["Geology"],
+              "category": "Engineering", //todo
+              "institution": "California Institute of Technology",
+              "year_completed": null
+            }
+          ]
+        },
+        {
+          "name": "Adam Fuhrmann",
+          "wikipedia_link": "https://en.wikipedia.org/wiki/Adam_Fuhrmann",
+          "age_at_selection": 35,
+          "highest_degree": "MS",
+          "education": "Purdue University",
+          "military_experience": "USAF",
+          "nationality": "USA",
+          "is_international": false,
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Aerospace Engineering"],
+              "category": "Engineering",
+              "institution": "Massachusetts Institute of Technology",
+              "year_completed": 2011
+            },
+             {
+              "level": "MS",
+              "fields": ["Flight Test Engineering"],
+              "category": "Engineering",
+              "institution": "United States Air Force Test Pilot School",
+              "year_completed": 2020
+            },
+             {
+              "level": "MS",
+              "fields": ["Systems Engineering"],
+              "category": "Engineering", //todo
+              "institution": "Purdue University",
+              "year_completed": 2022
+            }
+          ]
+        },
+        {
+          "name": "Cameron Jones",
+          "wikipedia_link": null,
+          "age_at_selection": 35,
+          "highest_degree": "MS",
+          "education": "University of Illinois at Urbana-Champaign",
+          "military_experience": "USAF",
+          "nationality": "USA",
+          "is_international": false,
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Aerospace Engineering"],
+              "category": "Engineering",
+              "institution": "University of Illinois at Urbana-Champaign",
+              "year_completed": null
+            },
+             {
+              "level": "MS",
+              "fields": ["Aerospace Engineering"],
+              "category": "Engineering",
+              "institution": "University of Illinois at Urbana-Champaign",
+              "year_completed": null
+            }
+          ]
+        },
+        {
+          "name": "Yuri Kubo",
+          "wikipedia_link": null,
+          "age_at_selection": 40,
+          "highest_degree": "MS",
+          "education": "Purdue University",
+          "military_experience": null,
+          "nationality": "USA",
+          "is_international": false,
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Electrical Engineering"],
+              "category": "Engineering",
+              "institution": "Purdue University",
+              "year_completed": null
+            },
+             {
+              "level": "MS",
+              "fields": ["Electrical and Computer Engineering"],
+              "category": "Engineering",
+              "institution": "Purdue University",
+              "year_completed": null
+            }
+          ]
+        },
+        {
+          "name": "Rebecca Lawler",
+          "wikipedia_link": null,
+          "age_at_selection": 38,
+          "highest_degree": "MS",
+          "education": "Johns Hopkins University",
+          "military_experience": "US Navy",
+          "nationality": "USA",
+          "is_international": false,
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Mechanical Engineering"],
+              "category": "Engineering",
+              "institution": "United States Naval Academy",
+              "year_completed": 2009
+            },
+             {
+              "level": "MS",
+              "fields": ["Space Systems Engineering"],
+              "category": "Engineering",
+              "institution": "Johns Hopkins University",
+              "year_completed": 2018
+            }
+          ]
+        },
+        {
+          "name": "Anna Menon",
+          "wikipedia_link": "https://en.wikipedia.org/wiki/Anna_Menon",
+          "age_at_selection": 39,
+          "highest_degree": "MS",
+          "education": "Duke University",
+          "military_experience": null,
+          "nationality": "USA",
+          "is_international": false,
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Mathematics", "Spanish"],
+              "category": "Mathematics",
+              "institution": "Texas Christian University",
+              "year_completed": null
+            },
+             {
+              "level": "MS",
+              "fields": ["Biomedical Engineering"],
+              "category": "Engineering",
+              "institution": "Duke University",
+              "year_completed": null
+            }
+          ]
+        },
+        {
+          "name": "Imelda Muller",
+          "wikipedia_link": null,
+          "age_at_selection": 34,
+          "highest_degree": "MD",
+          "education": "Duke University",
+          "military_experience": "US Navy",
+          "nationality": "USA",
+          "is_international": false,
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Behavioral Neuroscience"],
+              "category": "Science",
+              "institution": "Northeastern University",
+              "year_completed": 2017
+            },
+             {
+              "level": "MD",
+              "fields": ["Medical Degree"], // todo lol
+              "category": "Science", //todo
+              "institution": "University of Vermont College of Medicine",
+              "year_completed": null
+            }
+          ]
+        },
+        {
+          "name": "Erin Overcash",
+          "wikipedia_link": "https://en.wikipedia.org/wiki/Erin_Overcash",
+          "age_at_selection": 34,
+          "highest_degree": "MS",
+          "education": "University of Colorado, Boulder",
+          "military_experience": "US Navy",
+          "nationality": "USA",
+          "is_international": false,
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Aerospace Engineering"],
+              "category": "Engineering",
+              "institution": "University of Colorado, Boulder",
+              "year_completed": 2014
+            },
+             {
+              "level": "MS",
+              "fields": ["Bioastronautics"],
+              "category": "Engineering",
+              "institution": "University of Colorado, Boulder",
+              "year_completed": 2017
+            }
+          ]
+        },
+        {
+          "name": "Katherine Spies",
+          "wikipedia_link": null,
+          "age_at_selection": 43,
+          "highest_degree": "MS",
+          "education": "Harvard University",
+          "military_experience": "USMC",
+          "nationality": "USA",
+          "is_international": false,
+          "degrees": [
+            {
+              "level": "BS",
+              "fields": ["Chemical Engineering"],
+              "category": "Engineering",
+              "institution": "University of Southern California",
+              "year_completed": null
+            },
+             {
+              "level": "MS",
+              "fields": ["Design Engineering"],
+              "category": "Engineering",
+              "institution": "Harvard University",
+              "year_completed": null
+            }
+          ]
+        }
+      ]
+    },
     "group_23": {
       "selection_year": 2021,
       "applications_received": 12000,
