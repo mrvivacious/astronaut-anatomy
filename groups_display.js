@@ -1,3 +1,8 @@
+let activeFilters = {
+  military: 'all',
+  degree: 'all'
+};
+
 function displayGroupsInfo(filters = {}) {
   let groupNames = getGroupNames();
   
@@ -53,14 +58,27 @@ function displayGroupsInfo(filters = {}) {
     let tbody = document.createElement('tbody');
 
     let astronauts = group.astronauts.filter(astronaut => {
-      if (filters.military === 'military') {
-        return astronaut.military_experience;
+
+    // Military filter
+    if (filters.military === 'military' && !astronaut.military_experience) {
+      return false;
+    }
+
+    if (filters.military === 'civilian' && astronaut.military_experience) {
+      return false;
+    }
+
+    // Degree filter
+    if (filters.degree !== 'all') {
+      if (astronaut.highest_degree !== filters.degree) {
+        return false;
       }
-      if (filters.military === 'civilian') {
-        return !astronaut.military_experience;
-      }
-        return true;
-    });
+    }
+
+
+    return true;
+  });
+
     if (astronauts.length === 0) continue; // don't show empty groups
     for (let j = 0; j < astronauts.length; j++) {
       let astronaut = astronauts[j];
@@ -105,17 +123,24 @@ function displayGroupsInfo(filters = {}) {
   }
 }
 
-function setupFilters() {
+function setupMilitaryFilter() {
   const militarySelect = document.getElementById('military_filter');
 
   militarySelect.addEventListener('change', () => {
-    const filters = {
-      military: militarySelect.value
-    };
-
-    displayGroupsInfo(filters);
+    activeFilters.military = militarySelect.value;
+    displayGroupsInfo(activeFilters);
   });
 }
 
-setupFilters();
-displayGroupsInfo();
+function setupDegreeFilter() {
+  const degreeSelect = document.getElementById('degree_filter');
+
+  degreeSelect.addEventListener('change', () => {
+    activeFilters.degree = degreeSelect.value;
+    displayGroupsInfo(activeFilters);
+  });
+}
+
+setupMilitaryFilter();
+setupDegreeFilter();
+displayGroupsInfo(activeFilters);

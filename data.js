@@ -357,7 +357,7 @@ let nasa = {
           "name": "Mohammed Al Mulla",
           "wikipedia_link": "https://en.wikipedia.org/wiki/Mohammad_Al_Mulla",
           "age_at_selection": 33,
-          "highest_degree": "Executive Master's",
+          "highest_degree": "EMPA",
           "education": "Mohammed Bin Rashid School of Government",
           "military_experience": "Dubai Police",
           "nationality": "UAE",

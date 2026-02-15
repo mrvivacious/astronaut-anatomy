@@ -21,7 +21,7 @@ function getDegreeCounts() {
 
 function formatDegreeCounts() {
   let degreeCounts = getDegreeCounts();
-  let degreeOrder = ['PhD', 'MD', 'MS', 'MEd', 'MPhil', 'MSc', 'MPH', 'Executive Master\'s', 'BS', 'BEng'];
+  let degreeOrder = ['PhD', 'MD', 'MS', 'MEd', 'MPhil', 'MSc', 'MPH', 'EMPA', 'BS', 'BEng'];
   let output = [];
 
   for (let i = 0; i < degreeOrder.length; i++) {
