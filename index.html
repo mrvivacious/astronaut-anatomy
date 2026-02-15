@@ -9,51 +9,73 @@
 <body>
   <h1>Astronaut Anatomy | <em>What does it take to go to space?</em></h1>
   <hr>
-  <h3 style="color:red;">NOTE TO ALL ASTRONAUT PROSPECTS:<br>This presentation describes <em>selected</em> astronauts, not applicants.
-    <br>These are "trends" of a successful applicants. Not to be mistaken as a "template" for future success.</h3>
+  <h3 style="color:red;">NOTE TO ALL ASTRONAUT PROSPECTS:
+    <br>These are "trends" of successful applicants, not necessarily a "template" for future success.
+    <br>Think of this tool as a casual reference rather than a career guide.
+  </h3>
   <hr>
 
-  <canvas id="degreeChart" width="600" height="400"></canvas>
+  <div id="key_metrics">
+    <h3>Dataset Summary:</h3>
+    <pre>
+      Org: NASA
+      Total astronauts: 69
+      Average age: 36.5
+      % Military: 57% (39)
+      Most common degree: 36 MS
+      2nd most common: 16 PhD
+    </pre>
 
-  <h3>Total astronauts selected by NASA since 2004:</h3>
-  <p id="astronaut_count"></p>
-  <h3>Degree Distribution</h3>
+    <!-- <h3>Average astronaut age:</h3>
+    <p id="age_all_groups">-1</p> -->
+    
+    <!-- <h3>Average astronaut age by group:</h3>
+    <p id="age_by_group">-1</p> -->
+
+    <!-- <h3>Total astronauts selected by NASA since 2004:</h3>
+    <p id="astronaut_count"></p> -->
+  </div>
+ 
+  
+  <h2>Data Explorer</h2>
+  <canvas id="degreeChart"></canvas>
   <p id="degree_counts"></p>
+  
   <h3>Military Distribution</h3>
   <p id="military_counts"></p>
-  <h3>Average astronaut age:</h3>
-  <p id="age_all_groups">-1</p>
-  <h3>Average astronaut age by group:</h3>
-  <p id="age_by_group">-1</p>
+
+  <div id="filters">
+    <h3>Filter</h3>
+      <label>
+        Military:
+        <select id="military_filter">
+          <option value="all">All</option>
+          <option value="military">Military Only</option>
+          <option value="civilian">Civilian Only</option>
+        </select>
+      </label>
+      <br>
+      <label>
+        Highest degree earned:
+        <select id="degree_filter">
+          <option value="all">All</option>
+          <option value="PhD">PhD</option>
+          <option value="MD">MD</option>
+          <option value="MS">MS</option>
+          <option value="MEd">MEd</option>
+          <option value="MPhil">MPhil</option>
+          <option value="MSc">MSc</option>
+          <option value="MPH">MPH</option>
+          <option value="EMPA">EMPA</option>
+          <option value="BS">BS</option>
+          <option value="BEng">BEng</option>
+        </select>
+      </label>
+  </div>
 
   <hr>
   <h2>Group info</h2>
-  <h3>Filter</h3>
-  <label>
-    Military:
-    <select id="military_filter">
-      <option value="all">All</option>
-      <option value="military">Military Only</option>
-      <option value="civilian">Civilian Only</option>
-    </select>
-  </label>
-  <br>
-  <label>
-    Highest degree earned:
-    <select id="degree_filter">
-      <option value="all">All</option>
-      <option value="PhD">PhD</option>
-      <option value="MD">MD</option>
-      <option value="MS">MS</option>
-      <option value="MEd">MEd</option>
-      <option value="MPhil">MPhil</option>
-      <option value="MSc">MSc</option>
-      <option value="MPH">MPH</option>
-      <option value="EMPA">EMPA</option>
-      <option value="BS">BS</option>
-      <option value="BEng">BEng</option>
-    </select>
-  </label>
+  
   <div id="groups_info">put group info here!</div>
 </body>
   <script src="data.js"></script>

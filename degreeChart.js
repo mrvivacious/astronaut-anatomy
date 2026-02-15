@@ -17,13 +17,20 @@ function getDegreeCounts() {
   return counts;
 }
 
-function drawDegreeChart() {
+function drawDegreeChart(filters = { military: 'all', degree: 'all' }) {
   const canvas = document.getElementById('degreeChart');
   const ctx = canvas.getContext('2d');
 
-  const counts = getDegreeCounts();
+  // Match internal resolution to displayed size
+  canvas.width = canvas.clientWidth;
+  canvas.height = canvas.clientHeight;
+
+  const counts = getDegreeCounts(filters);
+
   const degrees = Object.keys(counts);
   const values = Object.values(counts);
+
+  if (values.length === 0) return;
 
   const maxValue = Math.max(...values);
 
@@ -43,18 +50,21 @@ function drawDegreeChart() {
     const x = padding + index * barWidth;
     const y = chartHeight - padding - barHeight;
 
-    // Draw bar
     ctx.fillStyle = "#2a6fdb";
     ctx.fillRect(x, y, barWidth - 10, barHeight);
 
-    // Draw value above bar
     ctx.fillStyle = "#000";
     ctx.textAlign = "center";
     ctx.fillText(value, x + (barWidth - 10) / 2, y - 5);
-
-    // Draw degree label below bar
     ctx.fillText(degree, x + (barWidth - 10) / 2, chartHeight - padding + 20);
   });
 }
 
-drawDegreeChart();
+
+document.addEventListener("DOMContentLoaded", () => {
+  drawDegreeChart();
+});
+
+window.addEventListener('resize', () => {
+  drawDegreeChart(activeFilters);
+});
