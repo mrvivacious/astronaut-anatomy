@@ -30,7 +30,7 @@ ageAveragesByGroupElement.innerText = prettyPrintGroupAverages(ageAveragesByGrou
 
 function prettyPrintGroupAverages(ageAveragesByGroup) {
   let output = JSON.stringify(ageAveragesByGroup);
-  output = output.replaceAll(',', '\n').replaceAll('"', ' ');
+  output = output.replaceAll(',', '\n').replaceAll('"', ' ').replaceAll(' :', ': ');
   output = output.replace('{', '').replace('}', '');
 
   return output;
