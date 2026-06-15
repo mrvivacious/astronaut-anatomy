@@ -118,10 +118,45 @@ table th {
   .group-section { margin-bottom: 30px; }
 }
 
+#circleChart {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  display: block;
+  margin: 20px auto;
+}
+
 #degreeChart {
   width: 100%;
   max-width: 800px;
   height: 400px;
   display: block;
   margin: 20px auto;
+}
+
+.chart-legend {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.legend-swatch {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.legend-text {
+  color: var(--bar-label, #000);
 }

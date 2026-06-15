@@ -65,7 +65,7 @@ export function getDegreeCounts(filters = {}) {
 
 // Military //
 
-export function getMilitaryCounts() {
+export function getMilitaryCounts(filters = {}) {
   let militaryBranches = {};
   let civilianCount = 0;
   let militaryTotalCount = 0;
@@ -76,7 +76,10 @@ export function getMilitaryCounts() {
     let astronauts = group.astronauts;
 
     for (let j = 0; j < astronauts.length; j++) {
-      let militaryExp = astronauts[j].military_experience;
+      let astronaut = astronauts[j];
+      if (!passesFilters(astronaut, filters)) continue;
+
+      let militaryExp = astronaut.military_experience;
 
       if (!militaryExp || militaryExp === null) {
         civilianCount++;
