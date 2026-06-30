@@ -1,61 +1,235 @@
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Astronaut Anatomy</title>
-    <link rel="stylesheet" href="stylesheet.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astronaut Anatomy | Checklist</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <style>
+    .checklist-intro {
+      background-color: rgba(42, 111, 219, 0.08);
+      border-left: 4px solid var(--bar-color);
+      border-radius: 4px;
+      padding: 20px;
+      margin: 20px 0;
+    }
 
-    <style>
-      #split {
-        display: flex;
-        width: 100%
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 20px 0;
+    }
+
+    .toolbar button {
+      background-color: var(--bar-color);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 10px 16px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+
+    .toolbar button:hover { opacity: 0.85; }
+
+    .toolbar button.secondary {
+      background-color: transparent;
+      color: var(--bar-color);
+      border: 1px solid var(--bar-color);
+    }
+
+    .checklist-card {
+      border: 1px solid var(--border-row);
+      border-radius: 6px;
+      padding: 20px 24px;
+      margin: 20px 0;
+      background-color: var(--bg);
+    }
+
+    .checklist-card h2 {
+      margin-top: 0;
+    }
+
+    ul.checklist {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    ul.checklist li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border-row);
+    }
+
+    ul.checklist li:last-child { border-bottom: none; }
+
+    ul.checklist input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+      margin-top: 2px;
+      flex-shrink: 0;
+      accent-color: var(--bar-color);
+      cursor: pointer;
+    }
+
+    ul.checklist label {
+      cursor: pointer;
+      line-height: 1.5;
+    }
+
+    ul.checklist input[type="checkbox"]:checked + label {
+      color: var(--fg-muted);
+      text-decoration: line-through;
+    }
+
+    .pick-one-banner {
+      text-align: center;
+      font-weight: bold;
+      color: var(--bar-color);
+      margin: 35px 0 5px 0;
+      font-size: 20px;
+    }
+
+    .pick-one-banner + p {
+      text-align: center;
+      color: var(--fg-muted);
+      font-style: italic;
+      margin-top: 0;
+    }
+
+    .paths {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .paths .checklist-card { margin: 0; }
+
+    @media print {
+      #dark-mode-toggle,
+      .toolbar,
+      .site-nav { display: none !important; }
+
+      body {
+        padding: 0;
+        font-size: 12pt;
+        color: #000;
+        background: #fff;
+        max-width: 100%;
       }
-      #left {
-        width: 49%
+
+      .checklist-card,
+      .checklist-intro {
+        border: 1px solid #999;
+        break-inside: avoid;
+        page-break-inside: avoid;
       }
-      #right {
-        width: 49%;
+
+      ul.checklist input[type="checkbox"] {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
       }
-    </style>
-  </head>
-    <button id="dark-mode-toggle">🌙 Dark mode</button>
-    <h1>Astronaut Anatomy | Checklist</h1>
+
+      a { color: #000; text-decoration: none; }
+    }
+  </style>
+</head>
+
+<body>
+  <button id="dark-mode-toggle">🌙 Dark mode</button>
+
+  <h1>Astronaut Anatomy | Checklist</h1>
+  <p class="site-nav"><a href="index.html">← Back to the data</a></p>
+  <hr>
+
+  <div class="checklist-intro">
+    <p>A roadmap of concrete action items you can start at any grade level. Tick items as you go &mdash;
+      your progress is saved in this browser. Use <strong>Print / Save as PDF</strong> to keep a copy on the wall.</p>
+    <p style="color: var(--fg-muted); font-style: italic; margin-bottom: 0;">
+      This is a list of things successful applicants have commonly done, not a guarantee. Treat it as inspiration, not a template.</p>
+  </div>
+
+  <div class="toolbar">
+    <button id="print-btn">🖨️ Print / Save as PDF</button>
+    <button id="reset-btn" class="secondary">↺ Reset progress</button>
+  </div>
+
+  <div class="checklist-card">
+    <h2>🌍 Any grade level</h2>
+    <ul class="checklist">
+      <li><input type="checkbox" id="any-1"><label for="any-1">Join or start an astronomy club</label></li>
+      <li><input type="checkbox" id="any-2"><label for="any-2">Build and launch a CubeSat</label></li>
+      <li><input type="checkbox" id="any-3"><label for="any-3">Go deep on a STEM skill (coding, electronics, machining, robotics)</label></li>
+      <li><input type="checkbox" id="any-4"><label for="any-4">Stay physically active and learn to swim</label></li>
+      <li><input type="checkbox" id="any-5"><label for="any-5">Read mission reports and astronaut memoirs</label></li>
+    </ul>
+  </div>
+
+  <div class="checklist-card">
+    <h2>👶 Middle school</h2>
+    <ul class="checklist">
+      <li><input type="checkbox" id="ms-1"><label for="ms-1">Graduate with strong math &amp; science grades</label></li>
+      <li><input type="checkbox" id="ms-2"><label for="ms-2">Join Science Olympiad, robotics, or a rocketry team</label></li>
+    </ul>
+  </div>
+
+  <div class="checklist-card">
+    <h2>👧 High school</h2>
+    <ul class="checklist">
+      <li><input type="checkbox" id="hs-1"><label for="hs-1">Graduate high school</label></li>
+      <li><input type="checkbox" id="hs-2"><label for="hs-2">Join the CubeSat club and launch a CubeSat</label></li>
+      <li><input type="checkbox" id="hs-3"><label for="hs-3">Join the NASA club and land an internship</label></li>
+      <li><input type="checkbox" id="hs-4"><label for="hs-4">Start the space club and become its president</label></li>
+    </ul>
+  </div>
+
+  <p class="pick-one-banner">Pick a path</p>
+  <p>You don't need all three &mdash; selected astronauts arrive from many directions.</p>
+
+  <div class="paths">
+    <div class="checklist-card">
+      <h2>📘 Undergrad</h2>
+      <ul class="checklist">
+        <li><input type="checkbox" id="ug-1"><label for="ug-1">Earn a STEM degree</label></li>
+        <li><input type="checkbox" id="ug-2"><label for="ug-2">Intern at JPL or another space lab</label></li>
+        <li><input type="checkbox" id="ug-3"><label for="ug-3">Start pilot lessons</label></li>
+        <li><input type="checkbox" id="ug-4"><label for="ug-4">Aim for top grades</label></li>
+      </ul>
+    </div>
+
+    <div class="checklist-card">
+      <h2>📚 Grad school</h2>
+      <ul class="checklist">
+        <li><input type="checkbox" id="gs-1"><label for="gs-1">Earn a master's degree</label></li>
+        <li><input type="checkbox" id="gs-2"><label for="gs-2">Build deep research experience</label></li>
+        <li><input type="checkbox" id="gs-3"><label for="gs-3">Publish or present your work</label></li>
+      </ul>
+    </div>
+
+    <div class="checklist-card">
+      <h2>🪖 Military</h2>
+      <ul class="checklist">
+        <li><input type="checkbox" id="mil-1"><label for="mil-1">Become a pilot</label></li>
+        <li><input type="checkbox" id="mil-2"><label for="mil-2">Take on leadership roles</label></li>
+        <li><input type="checkbox" id="mil-3"><label for="mil-3">Aim for test pilot school</label></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="checklist-card">
+    <h2>🚀 The finish line</h2>
+    <ul class="checklist">
+      <li><input type="checkbox" id="end-1"><label for="end-1">Apply to the NASA Astronaut Candidate program</label></li>
+      <li><input type="checkbox" id="end-2"><label for="end-2">Become an astronaut</label></li>
+    </ul>
+  </div>
+
+  <script src="darkMode.js"></script>
+  <script src="checklist.js"></script>
+</body>
 </html>
-
-<script src="darkMode.js"></script>
-
-would be cool to offer a checklist of sorts. something printable. 
-something that provides value immediately and provides ideas for action items
-
-<br>
-<h3>👶 Middle school</h3>
-<p>graduate</p>
-
-<h3>👧 High school</h3>
-<li>graduate high school</li>
-<li>join the cubesat club and launch a cubesat</li>
-<li>join the nasa club and get an internship</li>
-<li>start the space club and become the president</li>
-
-<center>
-  <h2>Pick one:</h2>
-</center>
-
-<div id="split">
-  <div id="left">
-    <h3>📘 Undergrad</h3>
-    <li>get a stem degree</li>
-    <li>intern at JPL</li>
-    <li>start pilot lessons</li>
-    <li>get a 4.0</li>
-
-    <h3>📚 Grad school</h3>
-    <li>get a master's degree</li>
-  </div>
-  <div id="right">
-    <h3>🪖 Military</h3>
-    <li>become a pilot</li>
-    <li>pick up leadership roles</li>
-    <li>become astronaut</li>
-  </div>
-</div>
