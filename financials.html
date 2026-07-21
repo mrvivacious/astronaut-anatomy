@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astronaut Anatomy | financials</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <style>
+    .financials-intro {
+      background-color: rgba(42, 111, 219, 0.08);
+      border-left: 4px solid var(--bar-color);
+      border-radius: 4px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 20px 0;
+    }
+
+    .toolbar button {
+      background-color: var(--bar-color);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 10px 16px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+
+    .toolbar button:hover { opacity: 0.85; }
+
+    .toolbar button.secondary {
+      background-color: transparent;
+      color: var(--bar-color);
+      border: 1px solid var(--bar-color);
+    }
+
+    .financials-card {
+      border: 1px solid var(--border-row);
+      border-radius: 6px;
+      padding: 20px 24px;
+      margin: 20px 0;
+      background-color: var(--bg);
+    }
+
+    .financials-card h2 {
+      margin-top: 0;
+    }
+
+    ul.financials {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    ul.financials li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border-row);
+    }
+
+    ul.financials li:last-child { border-bottom: none; }
+
+    ul.financials input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+      margin-top: 2px;
+      flex-shrink: 0;
+      accent-color: var(--bar-color);
+      cursor: pointer;
+    }
+
+    ul.financials label {
+      cursor: pointer;
+      line-height: 1.5;
+    }
+
+    ul.financials input[type="checkbox"]:checked + label {
+      color: var(--fg-muted);
+      text-decoration: line-through;
+    }
+
+    .pick-one-banner {
+      text-align: center;
+      font-weight: bold;
+      color: var(--bar-color);
+      margin: 35px 0 5px 0;
+      font-size: 20px;
+    }
+
+    .pick-one-banner + p {
+      text-align: center;
+      color: var(--fg-muted);
+      font-style: italic;
+      margin-top: 0;
+    }
+
+    .paths {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .paths .financials-card { margin: 0; }
+
+    @media print {
+      #dark-mode-toggle,
+      .toolbar,
+      .site-nav { display: none !important; }
+
+      body {
+        padding: 0;
+        font-size: 12pt;
+        color: #000;
+        background: #fff;
+        max-width: 100%;
+      }
+
+      .financials-card,
+      .financials-intro {
+        border: 1px solid #999;
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+
+      ul.financials input[type="checkbox"] {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      a { color: #000; text-decoration: none; }
+    }
+  </style>
+</head>
+
+<body>
+  <button id="dark-mode-toggle">🌙 Dark mode</button>
+
+  <h1>Astronaut Anatomy | financials</h1>
+  <p class="site-nav"><a href="index.html">← Back to the data</a></p>
+  <hr>
+
+  <div class="financials-intro">
+    <p>A breakdown of the financials related to the astronaut career.</p>
+  </div>
+
+  <center>
+    <div>
+      <img style="width:80%" src="https://futurism.com/wp-content/uploads/2025/09/woman-money-astronaut-buy-oxygen.jpg" alt="">
+      <br>
+      <span>img source: <a target="_blank" href="https://futurism.com/wp-content/uploads/2025/09/woman-money-astronaut-buy-oxygen.jpg">futurism.com</a></span>
+    </div>
+  </center>
+
+  <div class="financials-card">
+    <h2>💰 salary</h2>
+    <ul class="financials">
+      <li>$152,258.00 (source: 
+        <a href="https://www.nasa.gov/humans-in-space/becoming-an-astronaut-frequently-asked-questions/#hds-sidebar-nav-9">
+          NASA
+        </a>
+        )
+      </li>
+    </ul>
+  </div>
+
+  <div class="financials-card">
+    <h2>💰 costs of NASA's requirements (sources: i made it up)</h2>
+    <ul class="financials">
+      <li>$0 - Be a U.S. citizen</li>
+      <li>$200,000 - 4 year undergraduate degree</li>
+      <li>$100,000 - STEM master's degree</li>
+      <li>1 million dollars - pilot school</li>
+      <li>4 dollars - 1,000 pilot hours</li>
+      <li>$0 - NASA long-duration flight astronaut physical</li>
+      <li>good night</li>
+    </ul>
+  </div>
+  
+  <script src="darkMode.js"></script>
+</body>
+</html>
