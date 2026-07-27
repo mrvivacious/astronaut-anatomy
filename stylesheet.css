@@ -20,6 +20,15 @@ body.dark-mode {
   --bar-label: #e8eaf0;
 }
 
+#navbar {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  padding: 4px;
+  background-color: var(--bg);
+  transition: background-color 0.25s, color 0.25s;
+}
+
 #dark-mode-toggle {
   position: fixed;
   top: 14px;
