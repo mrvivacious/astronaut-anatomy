@@ -110,6 +110,14 @@
 
     .paths .financials-card { margin: 0; }
 
+    .source-note {
+      color: var(--fg-muted);
+      font-size: 0.9em;
+    }
+
+    ul.financials li p { margin: 0 0 6px 0; }
+    ul.financials li p:last-child { margin-bottom: 0; }
+
     @media print {
       #dark-mode-toggle,
       .toolbar,
@@ -155,7 +163,8 @@
   <hr>
 
   <div class="financials-intro">
-    <p>A breakdown of the financials related to the astronaut career.</p>
+    <p>What NASA pays astronauts, and what the path to qualifying costs. Each figure links to its source. Costs are published averages (sticker prices), not what any one person will pay: grants, scholarships, and military service change the math.</p>
+    <p class="source-note">Figures last checked November 1, 2026.</p>
   </div>
 
   <center>
@@ -169,28 +178,70 @@
   <div class="financials-card">
     <h2>💰 salary</h2>
     <ul class="financials">
-      <li>$152,258.00 (source: 
-        <a href="https://www.nasa.gov/humans-in-space/becoming-an-astronaut-frequently-asked-questions/#hds-sidebar-nav-9">
-          NASA
-        </a>
-        )
+      <li>
+        <div>
+          <p><strong>$152,258 per year.</strong> NASA says this reflects the 2024 pay schedules and is an approximation.</p>
+          <p class="source-note">Source: <a target="_blank" rel="noopener" href="https://www.nasa.gov/humans-in-space/becoming-an-astronaut-frequently-asked-questions/#hds-sidebar-nav-9">NASA, Becoming an Astronaut FAQ</a> (page last updated Aug 5, 2025)</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p>Military astronaut candidates are detailed to Johnson Space Center and stay on active-duty status for pay, benefits, and leave.</p>
+          <p class="source-note">Source: <a target="_blank" rel="noopener" href="https://www.nasa.gov/humans-in-space/becoming-an-astronaut-frequently-asked-questions/#hds-sidebar-nav-9">NASA, Becoming an Astronaut FAQ</a></p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p>In space: NASA told Fortune that astronauts aboard the space station get their regular salary, with transportation, lodging, and meals provided. Fortune reports an extra allowance of about $5 a day (about $1,430 for Suni Williams and Butch Wilmore's 286-day mission) and no overtime or hazard pay.</p>
+          <p class="source-note">Source: <a target="_blank" rel="noopener" href="https://fortune.com/2025/09/24/nasa-astronaut-class-2025-candidates-six-figure-salaries-150k-future-missions-space-moon-mars/">Fortune, Sept 24, 2025</a></p>
+        </div>
       </li>
     </ul>
   </div>
 
   <div class="financials-card">
-    <h2>💰 costs of NASA's requirements (sources: i made it up)</h2>
+    <h2>💰 what NASA's requirements cost (published averages, before aid)</h2>
     <ul class="financials">
-      <li>$0 - Be a U.S. citizen</li>
-      <li>$200,000 - 4 year undergraduate degree</li>
-      <li>$100,000 - STEM master's degree</li>
-      <li>1 million dollars - pilot school</li>
-      <li>4 dollars - 1,000 pilot hours</li>
-      <li>$0 - NASA long-duration flight astronaut physical</li>
-      <li>good night</li>
+      <li>
+        <div>
+          <p><strong>U.S. citizenship.</strong> Required. Applicants with valid U.S. dual citizenship are also eligible.</p>
+          <p class="source-note">Source: <a target="_blank" rel="noopener" href="https://www.nasa.gov/humans-in-space/becoming-an-astronaut-frequently-asked-questions/">NASA, Becoming an Astronaut FAQ</a></p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p><strong>Bachelor's degree</strong>, the usual first step toward NASA's master's requirement. Average published prices for 2025-26:</p>
+          <p>Public four-year, in-state: $11,950 a year in tuition and fees, about $47,800 over four years. The average full budget (tuition, housing, food, books, transportation, other expenses) is $30,990 a year, about $123,960 over four years.</p>
+          <p>Private nonprofit four-year: $45,000 a year in tuition and fees, about $180,000 over four years. Full budget: $65,470 a year, about $261,880 over four years.</p>
+          <p class="source-note">These are sticker prices. After grant aid, College Board estimates first-time, full-time students pay about $2,300 a year in tuition and fees at public four-year colleges (in-state) and about $16,910 at private nonprofit colleges. Source: <a target="_blank" rel="noopener" href="https://research.collegeboard.org/trends/college-pricing/highlights">College Board, Trends in College Pricing and Student Aid 2025</a></p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p><strong>STEM master's degree.</strong> Required. The average tuition and required fees for full-time graduate students at public institutions is $12,116 a year (2024-25), so about $24,200 for a two-year program, tuition and fees only.</p>
+          <p class="source-note">This is an average of what institutions charge, across graduate programs, not what students actually pay, and it excludes living costs. NASA also accepts two years of doctoral work in a STEM field, a medical degree (MD or DO), or completion of test pilot school in place of the master's; those are not priced here. Sources: <a target="_blank" rel="noopener" href="https://nces.ed.gov/ipeds/trendgenerator/app/answer/13/207">NCES IPEDS Trend Generator</a>, <a target="_blank" rel="noopener" href="https://www.nasa.gov/humans-in-space/astronauts/become-an-astronaut/">NASA, Become an Astronaut</a> (updated Oct 30, 2026)</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p><strong>Experience.</strong> NASA requires 3 years of related professional experience after your degree, or, for pilots, 1,000 hours of pilot-in-command time with at least 850 hours in high-performance jet aircraft. Flying experience is not required. The first option is paid employment. NASA says jet experience is usually obtained through the military.</p>
+          <p class="source-note">Sources: <a target="_blank" rel="noopener" href="https://www.nasa.gov/humans-in-space/astronauts/become-an-astronaut/">NASA, Become an Astronaut</a>, <a target="_blank" rel="noopener" href="https://www.nasa.gov/humans-in-space/becoming-an-astronaut-frequently-asked-questions/">NASA, Becoming an Astronaut FAQ</a></p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p><strong>NASA long-duration flight astronaut physical.</strong> Required. NASA does not grant waivers for its medical requirements. No cost figure is listed here because none was found in NASA's published materials.</p>
+          <p class="source-note">Sources: <a target="_blank" rel="noopener" href="https://www.nasa.gov/humans-in-space/becoming-an-astronaut-frequently-asked-questions/">NASA, Becoming an Astronaut FAQ</a>, <a target="_blank" rel="noopener" href="https://www.nasa.gov/wp-content/uploads/2023/04/ochmo-std-100.1a.pdf?emrc=bcdfce">NASA medical standard (PDF)</a></p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p><strong>Example total, public-school path, tuition and fees only:</strong> 4 &times; $11,950 + 2 &times; $12,116 is about $72,000, before aid and not counting living costs.</p>
+        </div>
+      </li>
     </ul>
   </div>
-  
+
   <script src="darkMode.js"></script>
 </body>
 </html>
