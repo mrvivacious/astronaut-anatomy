@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,30 +18,20 @@
       <a href="https://github.com/mrvivacious/astronaut-anatomy" target="_blank">🪐 source code</a>
     </h1>
   </div>
-  <hr>
 
-  <h3 style="color:red;">NOTE TO ALL ASTRONAUT PROSPECTS:
-    <br>These are "trends" of successful applicants, not necessarily a "template" for future success.
-    <br>Think of this tool as a casual reference rather than a career guide.
-  </h3>
-     Questions/ideas? Open an issue or message us.
-  <hr>
+  <h1>What does it take to go to space?</h1>
+  <p class="note"><strong>Note:</strong> these are trends among successful applicants, not a template for success. Casual reference, not a career guide.</p>
 
-  <h1>
-    What does it take to go to space?
-  </h1>
-
-  <div id="key_metrics">
-    <h1>Dataset</h1>
-    <pre>
-      Total astronauts: 69, NASA
-      Average age: 36.5
-      % Military: 57% (39)
-      Applicants (known): 44,600
-      Most common degree: 36 MS
-      2nd most common: 16 PhD
-    </pre>
-  </div>
+  <section id="key_metrics" aria-label="Dataset summary">
+    <div class="stat-grid">
+      <div class="stat"><span class="num">69</span><span class="label">NASA astronauts</span></div>
+      <div class="stat"><span class="num">36.5</span><span class="label">avg age at selection</span></div>
+      <div class="stat"><span class="num">57%</span><span class="label">military (39)</span></div>
+      <div class="stat"><span class="num">44,600</span><span class="label">known applicants</span></div>
+      <div class="stat"><span class="num">36</span><span class="label">MS, most common degree</span></div>
+      <div class="stat"><span class="num">16</span><span class="label">PhD, second most common</span></div>
+    </div>
+  </section>
 
   <div id="selectivity_stat" class="stat-card"></div>
 
@@ -111,6 +102,7 @@
 
   <script type="module" defer src="data.js"></script>
   <script type="module" defer src="app.js"></script>
+  <script src="shared.js"></script>
   <script defer src="darkMode.js"></script>
 </body>
 </html>
