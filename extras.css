@@ -1,0 +1,66 @@
+/* extras.css - styles for trends.html and directory.html (loaded after stylesheet.css).
+   Reuses the site's CSS variables so light/dark mode works everywhere. */
+
+:root {
+  /* categorical chart palette (Okabe-Ito inspired, colour-blind friendly) */
+  --c1: #2a6fdb; --c2: #e69f00; --c3: #009e73; --c4: #d55e00;
+  --c5: #cc79a7; --c6: #56b4e9; --c7: #7a5195; --c8: #8a8f98;
+}
+body.dark-mode {
+  --c1: #4d9fff; --c2: #f0b429; --c3: #2fd1a5; --c4: #ff8a50;
+  --c5: #e59bc7; --c6: #7cc7f2; --c7: #a98bd6; --c8: #9aa3b2;
+}
+
+/* ---- layout ---- */
+.toolbar-row { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 18px; margin: 8px 0; padding: 6px 8px; border: 1px solid var(--fg-muted); font-size: 14px; }
+.toolbar-row label { display: inline-flex; align-items: center; gap: 6px; }
+.chart-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 520px), 1fr)); gap: 10px; margin: 8px 0 14px; }
+.chart-card { border: 1px solid var(--fg-muted); padding: 8px 10px 6px; background: var(--surface, var(--bg)); min-width: 0; }
+.chart-card.wide { grid-column: 1 / -1; }
+.chart-card h3 { margin: 0 0 2px; font-size: 15px; }
+.chart-card .why { margin: 0 0 4px; font-size: 13px; color: var(--fg-muted); }
+.chart-card .foot { margin: 4px 0 0; font-size: 12px; color: var(--fg-muted); }
+.section-intro { font-size: 14px; color: var(--fg-muted); margin: 2px 0 6px; }
+.records { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); border: 1px solid var(--fg-muted); border-right: 0; border-bottom: 0; margin: 6px 0; }
+.records .rec { padding: 5px 9px; border-right: 1px solid var(--fg-muted); border-bottom: 1px solid var(--fg-muted); line-height: 1.3; }
+.records .rec .k { display: block; font-size: 12px; color: var(--fg-muted); }
+.records .rec .v { display: block; font-size: 16px; font-weight: 700; }
+.records .rec .d { display: block; font-size: 12px; color: var(--fg-muted); }
+
+/* ---- svg charts ---- */
+svg.ck { width: 100%; height: auto; display: block; overflow: visible; }
+.ck-tick { fill: var(--fg-muted); font-size: 11px; }
+.ck-axis-label { fill: var(--fg-muted); font-size: 11px; }
+.ck-value { fill: var(--fg); font-size: 11px; font-variant-numeric: tabular-nums; }
+.ck-grid { stroke: var(--fg-muted); stroke-opacity: .28; stroke-width: 1; }
+.ck-bar { transition: opacity .12s; }
+.ck-bar:hover { opacity: .78; }
+.ck-line { fill: none; stroke-width: 2; stroke-linejoin: round; }
+.ck-dot { stroke: var(--bg); stroke-width: 1; }
+.ck-dot:hover { r: 5.5; }
+.ck-scatter { fill-opacity: .72; }
+.ck-band { fill: var(--c1); fill-opacity: .13; }
+.ck-trend { stroke: var(--fg); stroke-width: 1.6; stroke-dasharray: 6 4; opacity: .65; }
+.ck-legend { display: flex; flex-wrap: wrap; gap: 2px 14px; margin: 4px 0 0; font-size: 12px; }
+.ck-legend span { display: inline-flex; align-items: center; gap: 5px; }
+.ck-legend i { display: inline-block; width: 11px; height: 11px; }
+.ck-tooltip { position: fixed; z-index: 50; pointer-events: none; max-width: 280px; padding: 5px 8px; font-size: 12px; line-height: 1.35;
+  white-space: pre-line; background: var(--fg); color: var(--bg); border-radius: 3px; box-shadow: 0 2px 8px rgba(0,0,0,.25); }
+
+/* ---- directory ---- */
+.dir-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; margin: 8px 0; padding: 6px 8px; border: 1px solid var(--fg-muted); font-size: 14px; }
+.dir-toolbar input[type="search"] { font: inherit; font-size: 14px; padding: 2px 6px; min-width: 220px; background: var(--select-bg); color: var(--fg); border: 1px solid var(--border); }
+.dir-toolbar button { font: inherit; font-size: 13px; padding: 2px 9px; cursor: pointer; background: var(--bg); color: var(--fg); border: 1px solid var(--fg); }
+.dir-toolbar .count { margin-left: auto; color: var(--fg-muted); }
+.dir-wrap { overflow-x: auto; border: 1px solid var(--fg-muted); }
+table.dir { width: 100%; border-collapse: collapse; font-size: 13px; margin: 0; }
+table.dir th, table.dir td { padding: 3px 8px; border-bottom: 1px solid var(--border-row); text-align: left; vertical-align: top; white-space: nowrap; }
+table.dir td.wrap { white-space: normal; min-width: 180px; }
+table.dir th { position: sticky; top: 0; background: var(--bg); cursor: pointer; user-select: none; border-bottom: 2px solid var(--fg); z-index: 1; }
+table.dir th[aria-sort="ascending"]::after { content: " ▲"; font-size: 10px; }
+table.dir th[aria-sort="descending"]::after { content: " ▼"; font-size: 10px; }
+table.dir td.num, table.dir th.num { text-align: right; font-variant-numeric: tabular-nums; }
+table.dir tbody tr:hover { background: rgba(42, 111, 219, 0.08); }
+.tag { display: inline-block; padding: 0 5px; font-size: 11px; border: 1px solid var(--fg-muted); color: var(--fg-muted); margin-left: 4px; }
+.muted { color: var(--fg-muted); }
+@media (max-width: 600px) { .dir-toolbar .count { margin-left: 0; } }

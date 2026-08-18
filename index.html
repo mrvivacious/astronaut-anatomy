@@ -14,6 +14,8 @@
       Astronaut Anatomy | 
       <a href="checklist.html">📋 checklist</a> | 
       <a href="financials.html">🏷️ financials</a> |
+      <a href="trends.html">📈 trends</a> |
+      <a href="directory.html">🗂️ directory</a> |
       <a href="resources.html">📚 resources</a> | 
       <a href="https://github.com/mrvivacious/astronaut-anatomy" target="_blank">🪐 source code</a>
     </h1>
@@ -21,16 +23,10 @@
 
   <h1>What does it take to go to space?</h1>
   <p class="note"><strong>Note:</strong> these are trends among successful applicants, not a template for success. Casual reference, not a career guide.</p>
+  <p class="note">Covers all 24 NASA classes, 1959&ndash;2025. Want the big picture? See <a href="trends.html"><strong>📈 20 charts of trends</strong></a> or browse every astronaut in the <a href="directory.html"><strong>🗂️ searchable directory</strong></a>.</p>
 
   <section id="key_metrics" aria-label="Dataset summary">
-    <div class="stat-grid">
-      <div class="stat"><span class="num">69</span><span class="label">NASA astronauts</span></div>
-      <div class="stat"><span class="num">36.5</span><span class="label">avg age at selection</span></div>
-      <div class="stat"><span class="num">57%</span><span class="label">military (39)</span></div>
-      <div class="stat"><span class="num">44,600</span><span class="label">known applicants</span></div>
-      <div class="stat"><span class="num">36</span><span class="label">MS, most common degree</span></div>
-      <div class="stat"><span class="num">16</span><span class="label">PhD, second most common</span></div>
-    </div>
+    <div class="stat-grid" id="stat_grid"></div>
   </section>
 
   <div id="selectivity_stat" class="stat-card"></div>
@@ -62,12 +58,15 @@
           <option value="all">All</option>
           <option value="PhD">PhD</option>
           <option value="MD">MD</option>
+          <option value="DVM">DVM</option>
+          <option value="JD">JD</option>
           <option value="MS">MS</option>
           <option value="MEd">MEd</option>
           <option value="MPhil">MPhil</option>
           <option value="MSc">MSc</option>
           <option value="MPH">MPH</option>
           <option value="EMPA">EMPA</option>
+          <option value="Graduate">Graduate (level not recorded)</option>
           <option value="BS">BS</option>
           <option value="BEng">BEng</option>
         </select>
@@ -81,6 +80,7 @@
     <div id="degreeChartSection" class="chart-section">
       <h3>Academic Degrees</h3>
       <canvas id="degreeChart"></canvas>
+      <p class="instructions">*Grad = a graduate degree whose level (MS, PhD, …) isn't recorded, mostly for Groups 1&ndash;18.</p>
     </div>
 
     <div id="militaryBranchSection" class="chart-section">
@@ -96,7 +96,7 @@
 
   <div id="astronautsSection" class="section">
     <h2>Astronauts by Selection Group</h2>
-    <p class="instructions">Click on a group to expand and view details</p>
+    <p class="instructions">Click on a group to expand and view details &nbsp; <button id="expand_all" type="button">Expand all</button> <button id="collapse_all" type="button">Collapse all</button></p>
     <div id="groups_info"></div>
   </div>
 

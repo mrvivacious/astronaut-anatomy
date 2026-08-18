@@ -1,6 +1,6 @@
 // Shared nav (current page marked) and one-line footer.
 (() => {
-  const pages = [['index.html', 'Explore'], ['checklist.html', 'Checklist'], ['financials.html', 'Financials'], ['resources.html', 'Resources']];
+  const pages = [['index.html', 'Explore'], ['checklist.html', 'Checklist'], ['financials.html', 'Financials'], ['trends.html', 'Trends'], ['directory.html', 'Directory'], ['resources.html', 'Resources']];
   const here = location.pathname.split('/').pop() || 'index.html';
   const el = (tag, props = {}, text = '') => Object.assign(document.createElement(tag), props, text ? { textContent: text } : {});
 

@@ -1,6 +1,6 @@
 // app.js - Bundled application modules
 // Import data layer
-import { nasa } from './data.js';
+import { nasaAll as nasa } from './dataAll.js';
 
 // ============================================================================
 // FILTER SERVICE - Single source of truth for filter state
@@ -88,12 +88,12 @@ function buildNameCell(astronaut) {
 
 function buildEducationCell(astronaut) {
   const td = document.createElement('td');
-  if (astronaut.degrees) {
+  if (astronaut.degrees && astronaut.degrees.length) {
     td.innerHTML = astronaut.degrees.map(d =>
       `${d.level} ${d.fields?.join(', ') || ''}<br>(${d.institution})`
     ).join('<br><br>');
   } else {
-    td.innerText = astronaut.education;
+    td.innerText = astronaut.education || '-';
   }
   return td;
 }
@@ -131,9 +131,11 @@ function buildTable(astronauts) {
 }
 
 function buildGroupHeader(groupName, group) {
-  let headerText = `${groupName} (${group.selection_year})`;
+  const label = groupName.replace('_', ' ').replace(/^./, c => c.toUpperCase());
+  let headerText = `${label} (${group.selection_year})`;
+  if (group.nickname) headerText += ` \u00b7 ${group.nickname}`;
   if (group.applications_received) {
-    headerText += ` | ${group.applications_received} applicants`;
+    headerText += ` | ${group.applications_received.toLocaleString()} applicants`;
   }
   return headerText;
 }
@@ -414,7 +416,20 @@ function displayGroupsInfo(filters = {}) {
     const group = getGroup(groupName);
     const astronauts = getGroupAstronauts(groupName, filters);
     const section = buildGroupSection(groupName, group, astronauts);
-    if (section) container.appendChild(section);
+    if (section) {
+      if (parseInt(groupName.split('_')[1], 10) <= 18) {   // keep the original 6 groups open, older ones collapsed
+        section.classList.add('collapsed');
+        section.querySelector('h3').classList.add('collapsed');
+      }
+      container.appendChild(section);
+    }
+  });
+}
+
+function setAllGroupsCollapsed(collapsed) {
+  document.querySelectorAll('#groups_info .group-section').forEach(section => {
+    section.classList.toggle('collapsed', collapsed);
+    section.querySelector('h3').classList.toggle('collapsed', collapsed);
   });
 }
 
@@ -434,6 +449,8 @@ function initGroupsDisplay() {
   filterService.subscribe(filters => displayGroupsInfo(filters));
   setupFilters();
   displayGroupsInfo(filterService.getFilters());
+  document.getElementById('expand_all').addEventListener('click', () => setAllGroupsCollapsed(false));
+  document.getElementById('collapse_all').addEventListener('click', () => setAllGroupsCollapsed(true));
 }
 
 document.addEventListener('DOMContentLoaded', initGroupsDisplay);
@@ -443,8 +460,10 @@ document.addEventListener('DOMContentLoaded', initGroupsDisplay);
 // ============================================================================
 
 const DEGREE_RANK = {
-  PhD: 1, MD: 2, MS: 3, MEd: 4, MPhil: 5, MSc: 6, MPH: 7, EMPA: 8, BS: 9, BEng: 10
+  PhD: 1, MD: 2, DVM: 2.1, JD: 2.2, MS: 3, MEd: 4, MPhil: 5, MSc: 6, MPH: 7, EMPA: 8, Graduate: 8.5, BS: 9, BEng: 10
 };
+// 'Graduate' = a graduate degree whose level the source doesn't record (mostly Groups 1-18)
+const degreeLabel = (d, long = false) => d === 'Graduate' ? (long ? 'Graduate (level not recorded)' : 'Grad*') : d;
 const PADDING = 50;
 const BAR_GAP = 10;
 
@@ -484,7 +503,7 @@ function drawDegreeChart(filters = { military: 'all', degree: 'all', gender: 'al
     ctx.fillStyle = getCSSVar('--bar-label');
     ctx.textAlign = "center";
     ctx.fillText(value, centerX, y - 5);
-    ctx.fillText(degree, centerX, chartHeight - PADDING + 20);
+    ctx.fillText(degreeLabel(degree), centerX, chartHeight - PADDING + 20);
   });
 }
 
@@ -609,7 +628,7 @@ function renderDegreeExplorer(filters) {
   sorted.forEach(([degree, count]) => {
     const percentage = ((count / total) * 100).toFixed(1);
     html += `<tr>
-      <td>${degree}</td>
+      <td>${degreeLabel(degree, true)}</td>
       <td style="text-align: center;">${count}</td>
       <td style="text-align: center;">${percentage}%</td>
     </tr>`;
@@ -636,17 +655,49 @@ function renderSelectivityCard() {
   const card = document.getElementById('selectivity_stat');
   if (!card) return;
 
-  const applications = getTotalApplications();
-  const selected = getTotalNumberOfAstronauts();
+  const known = getGroupNames().map(getGroup).filter(g => g.applications_received);
+  const applications = known.reduce((sum, g) => sum + g.applications_received, 0);
+  const selected = known.reduce((sum, g) => sum + g.astronauts.length, 0);
   const ratio = Math.round(applications / selected);
 
   let html = '<div class="selectivity-content">';
   html += '<p class="selectivity-label">Selection Rate</p>';
   html += `<p class="selectivity-stat">1 selected for every <strong>${ratio}</strong> applicants</p>`;
-  html += `<p class="selectivity-details">${applications.toLocaleString()} applications → ${selected} selected</p>`;
+  html += `<p class="selectivity-details">${applications.toLocaleString()} applications → ${selected} selected (${known.length} classes with known application counts)</p>`;
   html += '</div>';
 
   card.innerHTML = html;
 }
 
 document.addEventListener('DOMContentLoaded', renderSelectivityCard);
+
+// ============================================================================
+// KEY METRICS - Summary numbers computed from the data (all groups)
+// ============================================================================
+
+function renderKeyMetrics() {
+  const grid = document.getElementById('stat_grid');
+  if (!grid) return;
+
+  const all = getGroupNames().flatMap(name => getGroup(name).astronauts);
+  const total = all.length;
+  const ages = all.map(a => a.age_at_selection).filter(Boolean);
+  const avgAge = (ages.reduce((s, x) => s + x, 0) / ages.length).toFixed(1);
+  const military = all.filter(a => a.military_experience).length;
+  const advanced = all.filter(a => a.highest_degree && !['BS', 'BEng'].includes(a.highest_degree)).length;
+  const doctorates = all.filter(a => ['PhD', 'MD', 'DVM', 'JD'].includes(a.highest_degree)).length;
+  const groupCount = getGroupNames().length;
+
+  const cells = [
+    [total.toLocaleString(), `NASA astronauts, ${groupCount} classes since 1959`],
+    [avgAge, 'avg age at selection'],
+    [`${Math.round(military / total * 100)}%`, `military (${military})`],
+    [getTotalApplications().toLocaleString(), 'known applicants'],
+    [`${Math.round(advanced / total * 100)}%`, 'hold a graduate degree'],
+    [doctorates, 'PhD or MD (undercounts older classes)'],
+  ];
+  grid.innerHTML = cells.map(([n, label]) =>
+    `<div class="stat"><span class="num">${n}</span><span class="label">${label}</span></div>`).join('');
+}
+
+document.addEventListener('DOMContentLoaded', renderKeyMetrics);
