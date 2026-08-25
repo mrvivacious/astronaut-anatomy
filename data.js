@@ -677,9 +677,16 @@ export const nasa = {
           "degrees": [
             {
               "level": "BS",
-              "fields": ["Engineering"],
+              "fields": ["Systems Engineering"],
               "category": "Engineering",
-              "institution": "University",
+              "institution": "United States Naval Academy",
+              "year_completed": null
+            },
+            {
+              "level": "MS",
+              "fields": ["Nuclear Engineering"],
+              "category": "Engineering",
+              "institution": "University of Cambridge",
               "year_completed": null
             }
           ]
@@ -697,9 +704,16 @@ export const nasa = {
           "degrees": [
             {
               "level": "BS",
-              "fields": ["Engineering"],
-              "category": "Engineering",
-              "institution": "University",
+              "fields": ["Biology"],
+              "category": "Science",
+              "institution": "University of North Carolina, Chapel Hill",
+              "year_completed": null
+            },
+             {
+              "level": "MS",
+              "fields": ["Marine Sciences"],
+              "category": "Science",
+              "institution": "University of North Carolina, Chapel Hill",
               "year_completed": null
             }
           ]
@@ -717,9 +731,30 @@ export const nasa = {
           "degrees": [
             {
               "level": "BS",
-              "fields": ["Engineering"],
+              "fields": ["Astronautical Engineering and Engineering Science"],
               "category": "Engineering",
-              "institution": "University",
+              "institution": "United States Air Force Academy",
+              "year_completed": 1999
+            },
+             {
+              "level": "MS",
+              "fields": ["Aeronautics and Astronautics"],
+              "category": "Engineering",
+              "institution": "Massachusetts Institute of Technology",
+              "year_completed": null
+            },
+            {
+              "level": "Graduate",
+              "fields": [""],
+              "category": "",
+              "institution": "U.S. Naval Test Pilot School",
+              "year_completed": null
+            },
+             {
+              "level": "Graduate",
+              "fields": [""],
+              "category": "",
+              "institution": "U.S. Army Command and General Staff College ",
               "year_completed": null
             }
           ]
@@ -737,11 +772,26 @@ export const nasa = {
           "degrees": [
             {
               "level": "BS",
-              "fields": ["Engineering"],
+              "fields": ["Electrical Engineering"],
               "category": "Engineering",
-              "institution": "University",
+              "institution": "University of San Diego",
+              "minor" : "Physics, Mathematics", //todo mulitiple minors?
+              "year_completed": 2005
+            },
+            {
+              "level": "MS",
+              "fields": ["Systems Engineering"],
+              "category": "Engineering",
+              "institution": "Naval Postgraduate School",
               "year_completed": null
-            }
+            },
+            {
+              "level": "Graduate",
+              "fields": [""],
+              "category": "",
+              "institution": "U.S. Naval Test Pilot School",
+              "year_completed": null
+            },
           ]
         },
         {
@@ -757,11 +807,39 @@ export const nasa = {
           "degrees": [
             {
               "level": "BS",
-              "fields": ["Engineering"],
+              "fields": ["Aerospace Engineering"],
               "category": "Engineering",
-              "institution": "University",
-              "year_completed": null
-            }
+              "institution": "Boston University",
+              "year_completed": 1997
+            },
+            {
+              "level": "MS",
+              "fields": ["Flight Test Engineering"],
+              "category": "Engineering",
+              "institution": "US Air Force Test Pilot School",
+              "year_completed": 2008
+            },
+            {
+              "level": "MS",
+              "fields": ["Aerospace Engineering"],
+              "category": "Engineering",
+              "institution": "University of Alabama",
+              "year_completed": 2010
+            },
+            {
+              "level": "Graduate",
+              "fields": [""],
+              "category": "",
+              "institution": "USAF Air Command & Staff College, Maxwell AFB, AL",
+              "year_completed": 2010
+            },
+            {
+              "level": "Graduate",
+              "fields": [""],
+              "category": "",
+              "institution": "U.S. Air Force Air War College, Maxwell AFB, AL",
+              "year_completed": 2010
+            },
           ]
         },
         {
@@ -777,9 +855,16 @@ export const nasa = {
           "degrees": [
             {
               "level": "BS",
-              "fields": ["Engineering"],
+              "fields": ["Aeronautics and Astronautics"],
               "category": "Engineering",
-              "institution": "University",
+              "institution": "Massachusetts Institute of Technology",
+              "year_completed": null
+            },
+            {
+              "level": "PhD",
+              "fields": ["Electrical Engineering and Computer Science"],
+              "category": "Engineering",
+              "institution": "University of California, Berkeley",
               "year_completed": null
             }
           ]
@@ -797,9 +882,30 @@ export const nasa = {
           "degrees": [
             {
               "level": "BS",
-              "fields": ["Engineering"],
+              "fields": ["Mathematics"],
               "category": "Engineering",
-              "institution": "University",
+              "institution": "University of San Diego",
+              "year_completed": null
+            },
+            {
+              "level": "MD",
+              "fields": ["Doctorate of Medicine"],
+              "category": "Medicine",
+              "institution": "Harvard Medical School",
+              "year_completed": null
+            },
+            {
+              "level": "Medical Residency",
+              "fields": [""],
+              "category": "Medicine",
+              "institution": "Massachusetts General Hospital",
+              "year_completed": null
+            },
+            {
+              "level": "Medical Residency",
+              "fields": [""],
+              "category": "Medicine",
+              "institution": "Brigham and Women’s Hospital",
               "year_completed": null
             }
           ]
@@ -817,9 +923,23 @@ export const nasa = {
           "degrees": [
             {
               "level": "BS",
-              "fields": ["Engineering"],
+              "fields": ["Aerospace Engineering", "Information Technology"],
               "category": "Engineering",
-              "institution": "University",
+              "institution": "Massachusetts Institute of Technology",
+              "year_completed": null
+            },
+            {
+              "level": "MS",
+              "fields": ["Aerospace Engineering"],
+              "category": "Engineering",
+              "institution": "Naval Postgraduate School",
+              "year_completed": null
+            },
+            {
+              "level": "Graduate",
+              "fields": [""],
+              "category": "",
+              "institution": "U.S. Naval Test Pilot School",
               "year_completed": null
             }
           ]
@@ -837,10 +957,17 @@ export const nasa = {
           "degrees": [
             {
               "level": "BS",
-              "fields": ["Engineering"],
+              "fields": ["Aerospace Engineering"],
               "category": "Engineering",
-              "institution": "University",
-              "year_completed": null
+              "institution": "University of Kansas",
+              "year_completed": 2005
+            },
+            {
+              "level": "MS",
+              "fields": ["Aeronautics and Astronautics"],
+              "category": "Engineering",
+              "institution": "Purdue University",
+              "year_completed": 2009
             }
           ]
         },
@@ -857,11 +984,25 @@ export const nasa = {
           "degrees": [
             {
               "level": "BS",
-              "fields": ["Engineering"],
-              "category": "Engineering",
-              "institution": "University",
+              "fields": ["International Relations"],
+              "category": "?",
+              "institution": "United States Military Academy",
               "year_completed": null
-            }
+            },
+            {
+              "level": "MD",
+              "fields": ["Doctorate of Medicine"],
+              "category": "Medicine",
+              "institution": "Uniformed Services University of the Health Sciences",
+              "year_completed": null
+            },
+            {
+              "level": "MD",
+              "fields": ["Family Medicine Residency"],
+              "category": "Medicine",
+              "institution": "Martin Army Community Hospital",
+              "year_completed": null
+            },
           ]
         },
         {
@@ -877,9 +1018,16 @@ export const nasa = {
           "degrees": [
             {
               "level": "BS",
-              "fields": ["Engineering"],
-              "category": "Engineering",
-              "institution": "University",
+              "fields": ["Geological and Environmental Sciences"],
+              "category": "Science",
+              "institution": "Stanford University",
+              "year_completed": null
+            },
+            {
+              "level": "PhD",
+              "fields": ["Geology"],
+              "category": "Science",
+              "institution": "University of California, Los Angeles",
               "year_completed": null
             }
           ]
@@ -897,10 +1045,31 @@ export const nasa = {
           "degrees": [
             {
               "level": "BS",
-              "fields": ["Engineering"],
+              "fields": ["Mechanical Engineering"],
               "category": "Engineering",
-              "institution": "University",
-              "year_completed": null
+              "institution": "Royal Military College of Canada",
+              "year_completed": 2004
+            },
+            {
+              "level": "MS",
+              "fields": ["Space Studies"],
+              "category": "Science",
+              "institution": "Embry-Riddle Aeronautical University",
+              "year_completed": 2009
+            },
+            {
+              "level": "MS",
+              "fields": ["Flight Test Engineering"],
+              "category": "Engineering",
+              "institution": "United States Air Force's Air University",
+              "year_completed": 2012
+            },
+            {
+              "level": "MS",
+              "fields": ["Defence Studies"],
+              "category": "Science",
+              "institution": "Royal Military College of Canada ",
+              "year_completed": 2014
             }
           ]
         },
@@ -917,10 +1086,17 @@ export const nasa = {
           "degrees": [
             {
               "level": "BS",
+              "fields": ["Mechanical Engineering"],
+              "category": "Engineering",
+              "institution": "McGill University",
+              "year_completed": 2011
+            },
+            {
+              "level": "PhD",
               "fields": ["Engineering"],
               "category": "Engineering",
-              "institution": "University",
-              "year_completed": null
+              "institution": "University of Cambridge",
+              "year_completed": 2015
             }
           ]
         },
@@ -937,9 +1113,23 @@ export const nasa = {
           "degrees": [
             {
               "level": "BS",
+              "fields": ["Mechanical Engineering"],
+              "category": "Engineering",
+              "institution": "University of Denver",
+              "year_completed": null
+            },
+            {
+              "level": "MS",
+              "fields": ["Materials Science"],
+              "category": "Science",
+              "institution": "University of California, San Diego",
+              "year_completed": null
+            },
+            {
+              "level": "PhD",
               "fields": ["Engineering"],
               "category": "Engineering",
-              "institution": "University",
+              "institution": "University of California, San Diego",
               "year_completed": null
             }
           ]
