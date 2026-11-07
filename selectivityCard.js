@@ -6,15 +6,18 @@ function renderSelectivityCard() {
 
   const applications = getTotalApplications();
   const selected = getTotalNumberOfAstronauts();
+
+  if (!applications || !selected) {
+    card.innerHTML = '<p>Application data unavailable.</p>';
+    return;
+  }
+
   const ratio = Math.round(applications / selected);
 
-  let html = '<div class="selectivity-content">';
-  html += '<p class="selectivity-label">Selection Rate</p>';
-  html += `<p class="selectivity-stat">1 selected for every <strong>${ratio}</strong> applicants</p>`;
-  html += `<p class="selectivity-details">${applications.toLocaleString()} applications → ${selected} selected</p>`;
-  html += '</div>';
-
-  card.innerHTML = html;
+  card.innerHTML = `
+    <p>1 selected for every <strong>${ratio.toLocaleString()}</strong> applicants</p>
+    <p class="selectivity-sub">${applications.toLocaleString()} applications &rarr; ${selected} selected</p>
+  `;
 }
 
 document.addEventListener('DOMContentLoaded', renderSelectivityCard);

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astronaut Anatomy | trends</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="extras.css">
+</head>
+
+<body>
+  <button id="dark-mode-toggle">🌙 Dark mode</button>
+  <div id="navbar"></div>
+
+  <h1>Trends across 24 NASA astronaut classes</h1>
+  <p class="note"><strong>Note:</strong> descriptive trends among astronauts who were selected, not a template for success. Groups 1&ndash;18 come from NASA's Astronaut Fact Book: degree levels are partly inferred and career stats stop at 2019.</p>
+
+  <section id="key_metrics" aria-label="Dataset summary"><div class="stat-grid" id="summary"></div></section>
+
+  <div class="toolbar-row">
+    <label><input type="checkbox" id="intl_toggle" checked> Include international candidates trained with NASA classes</label>
+    <span class="muted" id="dataset_note"></span>
+  </div>
+
+  <div id="app"></div>
+
+  <script type="module" src="trends.js"></script>
+  <script src="shared.js"></script>
+  <script defer src="darkMode.js"></script>
+</body>
+</html>

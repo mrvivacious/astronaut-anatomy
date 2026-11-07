@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astronaut Anatomy | directory</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="extras.css">
+</head>
+
+<body>
+  <button id="dark-mode-toggle">🌙 Dark mode</button>
+  <div id="navbar"></div>
+
+  <h1>Astronaut directory</h1>
+  <p class="note"><strong>Note:</strong> every astronaut from all 24 NASA classes (1959&ndash;2025) with education, background and career data. Click a column to sort and a name to expand details. Career stats are as of the source data (mostly &le; 2019).</p>
+
+  <div class="dir-toolbar" id="dir_toolbar">
+    <input type="search" id="q" placeholder="Search name, school, field, birthplace…" aria-label="Search astronauts">
+    <label>Era <select id="f_era"><option value="">All</option></select></label>
+    <label>Group <select id="f_group"><option value="">All</option></select></label>
+    <label>Gender <select id="f_gender"><option value="">All</option><option value="female">Women</option><option value="male">Men</option></select></label>
+    <label>Background <select id="f_mil"><option value="">All</option><option value="mil">Military</option><option value="civ">Civilian</option></select></label>
+    <label>Degree <select id="f_tier"><option value="">All</option><option value="Bachelor">Bachelor's only</option><option value="Graduate">Graduate</option><option value="Doctorate">Doctorate (PhD/MD)</option></select></label>
+    <label>Status <select id="f_status"><option value="">All</option><option value="active">Active</option><option value="management">Management</option><option value="retired">Retired</option><option value="deceased">Deceased</option></select></label>
+    <label>Flown <select id="f_flown"><option value="">All</option><option value="yes">Has flown</option><option value="no">Never flew</option></select></label>
+    <button id="reset" type="button">Reset</button>
+    <button id="csv" type="button">Download CSV</button>
+    <span class="count" id="count" aria-live="polite"></span>
+  </div>
+
+  <div class="dir-wrap"><table class="dir" id="dir"><thead></thead><tbody></tbody></table></div>
+  <p class="note" id="foot"></p>
+
+  <script type="module" src="directory.js"></script>
+  <script src="shared.js"></script>
+  <script defer src="darkMode.js"></script>
+</body>
+</html>
